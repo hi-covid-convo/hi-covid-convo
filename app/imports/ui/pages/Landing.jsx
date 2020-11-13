@@ -5,16 +5,19 @@ import { Header, Container, Icon } from 'semantic-ui-react';
 class Landing extends React.Component {
   render() {
     return (
-        <Container text textAlign='center'>
-          <Header as='h1' size='huge'>Welcome to Covid-Convo</Header>
-          <p>Our goal is simple, to provide an easy-to-use chatbot for those concerned with COVID-19. Whether it&apos;s
-            directly answering user&apos;s questions or redirecting them to useful resources.</p>
-          <hr/>
-          <Header as='h2' icon textAlign='center'>
-            <Icon name='chat' />
-            <Header.Content>Ask Cece!</Header.Content>
-          </Header>
-        </Container>
+        <div className='middlepage'>
+          <Container text textAlign='center'>
+            <Header as='h1' size='huge'>Welcome to Covid-Convo</Header>
+            <p>Our goal is simple, to provide an easy-to-use chatbot for those concerned with COVID-19. Whether
+              it&apos;s
+              directly answering user&apos;s questions or redirecting them to useful resources.</p>
+            <hr/>
+            <Header as='h2' icon textAlign='center'>
+              <Icon name='chat'/>
+              <Header.Content>Ask Cece!</Header.Content>
+            </Header>
+          </Container>
+        </div>
     );
   }
 }

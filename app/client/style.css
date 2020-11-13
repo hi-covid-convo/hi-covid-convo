@@ -1,0 +1,15 @@
+.ui.borderless.fluid.top.attached.four.item.menu {
+  background-color: #e7e7e7;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+.middlepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}

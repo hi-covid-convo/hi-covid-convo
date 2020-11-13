@@ -5,7 +5,7 @@ export default class Faqs extends React.Component {
   render() {
     return (
         <Container text>
-          <Header as='h1'>COVID FAQs</Header>
+          <Header as='h1' textAlign='center'>COVID FAQs</Header>
           <p>Here are some frequently asked questions regarding COVID-19. If you cannot find the answers for your
             questions here, ask out chatbot Cece!
           </p>
