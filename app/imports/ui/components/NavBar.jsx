@@ -13,7 +13,7 @@ class NavBar extends React.Component {
     return (
         <Menu style={menuStyle} attached="top" borderless fluid widths={4}>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header as='h1'>hi-covid-convo</Header>
+            <Header as='h1'>HI-Covid-Convo</Header>
           </Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/about">
             About <Icon name='info circle'/>

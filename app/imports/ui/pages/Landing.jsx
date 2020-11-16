@@ -1,5 +1,7 @@
 import React from 'react';
-import { Header, Container, Icon } from 'semantic-ui-react';
+import { Header, Container, Icon, Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom'
+
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -14,7 +16,9 @@ class Landing extends React.Component {
             <hr/>
             <Header as='h2' icon textAlign='center'>
               <Icon name='chat'/>
+            <Button as={Link} to='/Cece'>
               <Header.Content>Ask Cece!</Header.Content>
+            </Button>
             </Header>
           </Container>
         </div>
