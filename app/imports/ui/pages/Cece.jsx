@@ -17,6 +17,10 @@ export default class Cece extends React.Component {
               find Covid-19 testing locations on the island, Cece will be able to help you and provide the appropriate
               sources for you so you don&apos;t have to do any research or searching!
             </Header>
+            <Header as='h4'>
+              Let us know what you think about Cece, and please fill out this survey to let us know how helpful Cece
+              was!
+            </Header>
           </Grid.Column>
 
           <Grid.Column textAlign='center'>
