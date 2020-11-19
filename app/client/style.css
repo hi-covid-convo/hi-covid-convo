@@ -5,6 +5,7 @@
   margin: 0;
   box-shadow: none;
   position: sticky;
+  z-index: 1;
 }
 
 .middlepage {
