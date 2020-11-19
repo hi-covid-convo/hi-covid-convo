@@ -11,7 +11,7 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = { marginBottom: '10px' };
     return (
-        <Menu style={menuStyle} attached="top" borderless fluid widths={4}>
+        <Menu style={menuStyle} attached="top" borderless fluid widths={4} stackable>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header as='h1'>HI-Covid-Convo</Header>
           </Menu.Item>
