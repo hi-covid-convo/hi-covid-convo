@@ -1,6 +1,8 @@
 import React from 'react';
 import { Grid, Header } from 'semantic-ui-react';
 
+/** Renders the CECE chat-bot page broken up into two columns. One for instructions, and the other for Cece. */
+/** Will also include a link to a survey page, where users can rate how well Cece answered their questions. */
 export default class Cece extends React.Component {
   render() {
     return (

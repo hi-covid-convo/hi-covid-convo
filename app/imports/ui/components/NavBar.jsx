@@ -7,11 +7,23 @@ import { Menu, Dropdown, Header, Icon } from 'semantic-ui-react';
 import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
+/** Only users that will be able to log in are admin users, and they will have one extra tab in the navbar called
+ * statistics, which will link them to a statistics page for the application.
+ */
 class NavBar extends React.Component {
   render() {
-    const menuStyle = { marginBottom: '10px' };
+    const menuStyle = {
+      marginBottom: '10px',
+      backgroundColor: '#e7e7e7',
+      border: 0,
+      borderRadius: 0,
+      margin: 0,
+      boxShadow: 'none',
+      position: 'sticky',
+      zIndex: 1
+    };
     return (
-        <Menu style={menuStyle} attached="top" borderless fluid stackable >
+        <Menu style={menuStyle} attached="top" borderless fluid stackable>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Header as='h1'>HI-Covid-Convo</Header>
           </Menu.Item>
@@ -24,7 +36,7 @@ class NavBar extends React.Component {
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Statistics</Menu.Item>
           ) : ''}
-          <Menu.Item>
+          <Menu.Item position='right'>
             {this.props.currentUser === '' ? (
                 <Dropdown id="login-dropdown" text="Login" pointing="top right" icon={'user'}>
                   <Dropdown.Menu>

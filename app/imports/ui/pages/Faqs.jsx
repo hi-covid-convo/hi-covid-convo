@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Header } from 'semantic-ui-react';
 
+/** Renders the FAQs page. May change FAQs to general knowledge information page */
 export default class Faqs extends React.Component {
   render() {
     return (
