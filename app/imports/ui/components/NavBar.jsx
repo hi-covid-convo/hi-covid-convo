@@ -20,7 +20,7 @@ class NavBar extends React.Component {
       margin: 0,
       boxShadow: 'none',
       position: 'sticky',
-      zIndex: 1
+      zIndex: 1,
     };
     return (
         <Menu style={menuStyle} attached="top" borderless fluid stackable>
@@ -34,7 +34,7 @@ class NavBar extends React.Component {
             COVID FAQs <Icon name='question circle outline'/>
           </Menu.Item>
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Statistics</Menu.Item>
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/statistics" key='admin'>Statistics</Menu.Item>
           ) : ''}
           <Menu.Item position='right'>
             {this.props.currentUser === '' ? (
