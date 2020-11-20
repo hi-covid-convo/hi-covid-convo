@@ -16,7 +16,7 @@ import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import About from '../pages/About';
-import Faqs from '../pages/Faqs';
+import General from '../pages/General';
 import Cece from '../pages/Cece';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -29,7 +29,7 @@ class App extends React.Component {
             <Switch>
               <Route exact path="/" component={Landing}/>
               <Route path="/about" component={About}/>
-              <Route path="/faqs" component={Faqs}/>
+              <Route path="/general" component={General}/>
               <Route path="/cece" component={Cece}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>

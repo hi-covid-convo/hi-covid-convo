@@ -30,11 +30,14 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/about">
             About <Icon name='info circle'/>
           </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/faqs">
-            COVID FAQs <Icon name='question circle outline'/>
+          <Menu.Item as={NavLink} activeClassName="" exact to="/general">
+            General Knowledge <Icon name='question circle outline'/>
           </Menu.Item>
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/statistics" key='admin'>Statistics</Menu.Item>
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/statistics" key='admin'>
+                Statistics
+                <Icon name='line graph'/>
+              </Menu.Item>
           ) : ''}
           <Menu.Item position='right'>
             {this.props.currentUser === '' ? (
