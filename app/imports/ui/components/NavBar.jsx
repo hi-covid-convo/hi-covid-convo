@@ -14,7 +14,7 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = {
       marginBottom: '10px',
-      backgroundColor: '#e7e7e7',
+      backgroundColor: '#C4C4C4',
       border: 0,
       borderRadius: 0,
       margin: 0,
