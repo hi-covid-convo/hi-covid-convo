@@ -14,7 +14,7 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = {
       marginBottom: '10px',
-      backgroundColor: '#C4C4C4',
+      backgroundColor: '#2B313E',
       border: 0,
       borderRadius: 0,
       margin: 0,
@@ -23,20 +23,20 @@ class NavBar extends React.Component {
       zIndex: 1,
     };
     return (
-        <Menu style={menuStyle} attached="top" borderless fluid stackable>
+        <Menu style={menuStyle} attached="top" borderless fluid stackable inverted>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header as='h1'>HI-Covid-Convo</Header>
+            <Header inverted as='h1'>Hawaii Covid Convo</Header>
           </Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/about">
-            About <Icon name='info circle'/>
+            About <Icon inverted name='info circle'/>
           </Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/general">
-            General Knowledge <Icon name='question circle outline'/>
+            General Knowledge <Icon name='question circle outline' inverted/>
           </Menu.Item>
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Menu.Item as={NavLink} activeClassName="active" exact to="/statistics" key='admin'>
                 Statistics
-                <Icon name='line graph'/>
+                <Icon name='line graph' inverted/>
               </Menu.Item>
           ) : ''}
           <Menu.Item position='right'>

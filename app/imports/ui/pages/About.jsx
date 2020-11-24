@@ -6,7 +6,7 @@ export default class About extends React.Component {
     return (
         <Container text>
           <Header as='h1' textAlign='center'>About Covid Convo</Header>
-          <p>Hi-Covid-Convo was made to improve the customer experience while providing easy navigation and providing
+          <p>Hawaii Covid Convo was made to improve the customer experience while providing easy navigation and providing
             useful and helpful resources for Hawaii.
           </p>
           <p>We wanted to use a chat-bot interface to provide a friendlier and more personalized experience for the

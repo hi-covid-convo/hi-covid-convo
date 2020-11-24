@@ -8,7 +8,7 @@ class Landing extends React.Component {
     return (
         <div className='middlepage'>
           <Container text textAlign='center'>
-            <Header as='h1' size='huge'>Welcome to Covid-Convo</Header>
+            <Header as='h1' size='huge'>Welcome to Covid Convo</Header>
             <p>Our goal is simple, to provide an easy-to-use chatbot for those concerned with COVID-19. Whether
               it&apos;s
               directly answering user&apos;s questions or redirecting them to useful resources. You can ask our chat-bot

@@ -7,7 +7,7 @@ class Footer extends React.Component {
     return (
         <footer>
           <div style={divStyle} className="ui center aligned container">
-            <p>hi-covid-convo-team</p>
+            <p>Hawaii Covid Convo team</p>
             <p>Glen Larita, Sydney Dempsey, Daniel Nilo, Brian Abad</p>
           </div>
         </footer>
