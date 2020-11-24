@@ -1,14 +1,14 @@
 import React from 'react';
-import { Grid, Header, Segment } from 'semantic-ui-react';
+import { Grid, Header } from 'semantic-ui-react';
 
 /** Renders the CECE chat-bot page broken up into two columns. One for instructions, and the other for Cece. */
 /** Will also include a link to a survey page, where users can rate how well Cece answered their questions. */
 export default class Cece extends React.Component {
   render() {
     const botStyle = {
-      border: "none",
-      backgroundColor: "#2B313E",
-    }
+      border: 'none',
+      backgroundColor: '#2B313E',
+    };
     return (
         <div className="chatbot">
           <Grid container centered stackable columns={2}>
@@ -26,7 +26,8 @@ export default class Cece extends React.Component {
                 sources for you so you don&apos;t have to do any research or searching!
               </Header>
               <Header as='h4' inverted color='grey'>
-                Let us know what you think about Cece, and please fill out this survey to let us know how helpful Cece
+                Let us know what you think about Cece, and please fill out this <a href='../Feedback'>survey</a>
+                to let us know how helpful Cece
                 was!
               </Header>
             </Grid.Column>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Grid, Segment, Header, Radio } from 'semantic-ui-react';
 import { AutoForm, ErrorsField, NumField, SelectField, SubmitField, TextField } from 'uniforms-semantic';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
@@ -50,6 +50,8 @@ class AddStuff extends React.Component {
                 fRef = ref;
               }} schema={bridge} onSubmit={data => this.submit(data, fRef)}>
                 <Segment>
+                  <Radio label='yes' />
+                  <Radio label='no' />
                   <TextField name='name'/>
                   <NumField name='quantity' decimal={false}/>
                   <SelectField name='condition'/>

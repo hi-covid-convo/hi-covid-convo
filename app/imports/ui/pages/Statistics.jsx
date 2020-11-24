@@ -17,34 +17,35 @@ class Statistics extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
-          <Header as="h2" textAlign="center">Statistics</Header>
-          <Header as="h3" textAlign="center">Below are the stats of the Cece Chatbot</Header>
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Very Satisfied</Table.HeaderCell>
-                <Table.HeaderCell>Satisfied</Table.HeaderCell>
-                <Table.HeaderCell>Unsatisfied</Table.HeaderCell>
-                <Table.HeaderCell>Very Unsatisfied</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
-            <Table.Body>
-              {this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff}/>)}
-            </Table.Body>
-          </Table>
+        <div className="spacing">
+          <Container>
+            <Header as="h2" textAlign="center">Statistics</Header>
+            <Header as="h3" textAlign="center">Below are the stats of the Cece Chatbot</Header>
+            <Table celled>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Very Satisfied</Table.HeaderCell>
+                  <Table.HeaderCell>Satisfied</Table.HeaderCell>
+                  <Table.HeaderCell>Unsatisfied</Table.HeaderCell>
+                  <Table.HeaderCell>Very Unsatisfied</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body>
+                {this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff}/>)}
+              </Table.Body>
+            </Table>
 
-          <Header as="h3" textAlign="center">Did Cece Help?</Header>
-          <Table celled>
-            <Table.Header>
-              <Table.Row>
-                <Table.HeaderCell>Yes</Table.HeaderCell>
-                <Table.HeaderCell>No</Table.HeaderCell>
-              </Table.Row>
-            </Table.Header>
-          </Table>
-        </Container>
-
+            <Header as="h3" textAlign="center">Did Cece Help?</Header>
+            <Table celled>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Yes</Table.HeaderCell>
+                  <Table.HeaderCell>No</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+            </Table>
+          </Container>
+        </div>
     );
   }
 }
