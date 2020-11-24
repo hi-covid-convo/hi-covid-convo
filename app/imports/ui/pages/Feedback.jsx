@@ -11,11 +11,11 @@ const formSchema = new SimpleSchema({
   rating: {
     type: String,
     allowedValues: ['excellent', 'good', 'fair', 'poor'],
-    defaultValue: 'good'
+    defaultValue: 'good',
   },
-  howHelpfulWasCece : {
+  howHelpfulWasCece: {
     type: String,
-    allowedValues: ['Very helpful', 'Somewhat helpful', 'Not very helpful', 'Not helpful at all']
+    allowedValues: ['Very helpful', 'Somewhat helpful', 'Not very helpful', 'Not helpful at all'],
   },
   whatCanBeImproved: String,
   finalThoughts: String,
