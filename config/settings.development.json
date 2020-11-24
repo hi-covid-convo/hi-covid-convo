@@ -14,5 +14,10 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+  "defaultFeedback": [
+    { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
+    { "rating": "excellent", "howHelpfulWasCece": "Not very helpful", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
+    { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" }
   ]
 }

@@ -14,7 +14,7 @@ class ReviewsCollection {
       rating: {
         type: String,
         allowedValues: ['excellent', 'good', 'fair', 'poor'],
-        defaultValue: 'good'
+        defaultValue: 'good',
       },
       howHelpfulWasCece: {
         type: String,
