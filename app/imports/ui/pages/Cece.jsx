@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Header } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 /** Renders the CECE chat-bot page broken up into two columns. One for instructions, and the other for Cece. */
 /** Will also include a link to a survey page, where users can rate how well Cece answered their questions. */
@@ -26,7 +27,7 @@ export default class Cece extends React.Component {
                 sources for you so you don&apos;t have to do any research or searching!
               </Header>
               <Header as='h4' inverted color='grey'>
-                Let us know what you think about Cece, and please fill out this <a href='../Feedback'>survey</a>
+                Let us know what you think about Cece, and please fill out this <Link to='/Feedback'>survey </Link>
                 to let us know how helpful Cece
                 was!
               </Header>

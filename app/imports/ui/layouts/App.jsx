@@ -14,6 +14,7 @@ import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
+import Feedback from '../pages/Feedback';
 import Signout from '../pages/Signout';
 import About from '../pages/About';
 import General from '../pages/General';
@@ -33,6 +34,7 @@ class App extends React.Component {
               <Route path="/cece" component={Cece}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
+              <Route path="/feedback" component={Feedback}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
