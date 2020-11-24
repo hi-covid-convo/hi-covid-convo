@@ -34,8 +34,8 @@ class NavBar extends React.Component {
             General Knowledge <Icon name='question circle outline' inverted/>
           </Menu.Item>
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/statistics" key='admin'>
-                Statistics
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/analytics" key='admin'>
+                Analytics
                 <Icon name='line graph' inverted/>
               </Menu.Item>
           ) : ''}

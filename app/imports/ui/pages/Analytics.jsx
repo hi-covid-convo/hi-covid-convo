@@ -7,7 +7,7 @@ import { Reviews } from '../../api/review/Reviews';
 import ReviewItemAdmin from '../components/ReviewItemAdmin';
 
 /** Renders the statistics of the application and the reviews on the chat-bot */
-class Statistics extends React.Component {
+class Analytics extends React.Component {
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -19,8 +19,8 @@ class Statistics extends React.Component {
     return (
         <div className="spacing">
           <Container>
-            <Header as="h2" textAlign="center">Statistics</Header>
-            <Header as="h3" textAlign="center">Below are the stats of the Cece Chatbot</Header>
+            <Header as="h2" textAlign="center">Analytics</Header>
+            <Header as="h3" textAlign="center">Below displays analytical data of the Cece Chatbot</Header>
             <Table celled>
               <Table.Header>
                 <Table.Row>
@@ -51,7 +51,7 @@ class Statistics extends React.Component {
 }
 
 /** Require an array of Statistics documents in the props. */
-Statistics.propTypes = {
+Analytics.propTypes = {
   reviews: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -64,4 +64,4 @@ export default withTracker(() => {
     reviews: Reviews.collection.find({}).fetch(),
     ready: subscription.ready(),
   };
-})(Statistics);
+})(Analytics);
