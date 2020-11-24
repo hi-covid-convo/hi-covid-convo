@@ -26,7 +26,7 @@ if (Stuffs.collection.find().count() === 0) {
   if (Reviews.collection.find().count() === 0) {
     if (Meteor.settings.defaultData) {
       console.log('Creating default feedback data.');
-      Meteor.settings.defaultData.map(data => addReview(data));
+      Meteor.settings.defaultFeedback.map(data => addReview(data));
     }
 }
 
