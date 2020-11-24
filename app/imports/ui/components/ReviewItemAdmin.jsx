@@ -7,10 +7,10 @@ class ReviewItemAdmin extends React.Component {
   render() {
     return (
         <Table.Row>
-          <Table.Cell>{this.props.stuff.rating}</Table.Cell>
-          <Table.Cell>{this.props.stuff.howHelpfulWasCece}</Table.Cell>
-          <Table.Cell>{this.props.stuff.whatCanBeImproved}</Table.Cell>
-          <Table.Cell>{this.props.stuff.finalThoughts}</Table.Cell>
+          <Table.Cell>{this.props.review.rating}</Table.Cell>
+          <Table.Cell>{this.props.review.howHelpfulWasCece}</Table.Cell>
+          <Table.Cell>{this.props.review.whatCanBeImproved}</Table.Cell>
+          <Table.Cell>{this.props.review.finalThoughts}</Table.Cell>
         </Table.Row>
     );
   }

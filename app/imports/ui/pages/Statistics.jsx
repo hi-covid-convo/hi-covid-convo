@@ -24,10 +24,10 @@ class Statistics extends React.Component {
             <Table celled>
               <Table.Header>
                 <Table.Row>
-                  <Table.HeaderCell>Very Satisfied</Table.HeaderCell>
-                  <Table.HeaderCell>Satisfied</Table.HeaderCell>
-                  <Table.HeaderCell>Unsatisfied</Table.HeaderCell>
-                  <Table.HeaderCell>Very Unsatisfied</Table.HeaderCell>
+                  <Table.HeaderCell>How Satisfied Were You?</Table.HeaderCell>
+                  <Table.HeaderCell>How Helpful was Cece?</Table.HeaderCell>
+                  <Table.HeaderCell>What Can Be Improved?</Table.HeaderCell>
+                  <Table.HeaderCell>Final Thoughts?</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
               <Table.Body>
