@@ -3,8 +3,8 @@ import { Meteor } from 'meteor/meteor';
 import { Container, Header, Loader, Table } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { Stuffs } from '../../api/stuff/Stuff';
-import StuffItemAdmin from '../components/StuffItemAdmin';
+import { Reviews } from '../../api/review/Reviews';
+import ReviewItemAdmin from '../components/ReviewItemAdmin';
 
 /** Renders the statistics of the application and the reviews on the chat-bot */
 class Statistics extends React.Component {
@@ -31,7 +31,7 @@ class Statistics extends React.Component {
                 </Table.Row>
               </Table.Header>
               <Table.Body>
-                {this.props.stuffs.map((stuff) => <StuffItemAdmin key={stuff._id} stuff={stuff}/>)}
+                {this.props.reviews.map((review) => <ReviewItemAdmin key={review._id} review={review}/>)}
               </Table.Body>
             </Table>
 
@@ -52,16 +52,16 @@ class Statistics extends React.Component {
 
 /** Require an array of Statistics documents in the props. */
 Statistics.propTypes = {
-  stuffs: PropTypes.array.isRequired,
+  reviews: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe(Stuffs.adminPublicationName);
+  const subscription = Meteor.subscribe(Reviews.adminPublicationName);
   return {
-    stuffs: Stuffs.collection.find({}).fetch(),
+    reviews: Reviews.collection.find({}).fetch(),
     ready: subscription.ready(),
   };
 })(Statistics);
