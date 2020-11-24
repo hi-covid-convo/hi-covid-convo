@@ -8,15 +8,15 @@ class Landing extends React.Component {
     return (
         <div className='middlepage'>
           <Container text textAlign='center'>
-            <Header as='h1' size='huge'>Welcome to Covid Convo</Header>
-            <p>Our goal is simple, to provide an easy-to-use chatbot for those concerned with COVID-19. Whether
+            <Header as='h1' size='huge' inverted>Welcome to Covid Convo</Header>
+            <p className='white'>Our goal is simple, to provide an easy-to-use chatbot for those concerned with COVID-19. Whether
               it&apos;s
               directly answering user&apos;s questions or redirecting them to useful resources. You can ask our chat-bot
             Cece a question by clicking on the button below, or if you want to know more about our mission, see the
             our About page.</p>
             <hr/>
             <Header as='h2' icon textAlign='center'>
-              <Icon name='chat'/>
+              <Icon inverted name='chat'/>
             <Button as={Link} to='/Cece'>
               <Header.Content>Ask Cece!</Header.Content>
             </Button>
