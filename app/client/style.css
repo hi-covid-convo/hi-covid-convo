@@ -1,5 +1,5 @@
 .middlepage {
-  background: url('images/background.jpg') no-repeat center center;
+  background: url('images/backgroundImage.jpg') no-repeat center center fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,6 +14,11 @@
 
 }
 
+.landingText {
+  color: whitesmoke;
+}
+
 .text {
-  color: white;
+  color: #2B313E;
+  padding-top: 20px;
 }
