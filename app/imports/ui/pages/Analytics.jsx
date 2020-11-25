@@ -19,8 +19,8 @@ class Analytics extends React.Component {
     return (
         <div className="spacing">
           <Container>
-            <Header as="h2" textAlign="center">Analytics</Header>
-            <Header as="h3" textAlign="center">Below displays analytical data of the Cece Chatbot</Header>
+            <Header as="h2" textAlign="center" inverted>Analytics</Header>
+            <Header as="h3" textAlign="center" inverted>Below displays analytical data of the Cece Chatbot</Header>
             <Table celled>
               <Table.Header>
                 <Table.Row>
@@ -35,7 +35,7 @@ class Analytics extends React.Component {
               </Table.Body>
             </Table>
 
-            <Header as="h3" textAlign="center">Did Cece Help?</Header>
+            <Header as="h3" textAlign="center" inverted>Did Cece Help?</Header>
             <Table celled>
               <Table.Header>
                 <Table.Row>

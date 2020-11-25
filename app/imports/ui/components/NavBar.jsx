@@ -14,7 +14,7 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = {
       marginBottom: '10px',
-      backgroundColor: '#2B313E',
+      backgroundColor: '#E7E7E7',
       border: 0,
       borderRadius: 0,
       margin: 0,
@@ -23,25 +23,25 @@ class NavBar extends React.Component {
       zIndex: 1,
     };
     return (
-        <Menu style={menuStyle} attached="top" borderless fluid stackable inverted>
+        <Menu style={menuStyle} attached="top" borderless fluid stackable>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header inverted as='h1'>Hawaii Covid Convo</Header>
+            <Header as='h1'>Hawaii Covid Convo</Header>
           </Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/about">
-            About <Icon inverted name='info circle'/>
+            About <Icon name='info circle'/>
           </Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/general">
-            General Knowledge <Icon name='question circle outline' inverted/>
+            General Knowledge <Icon name='question circle outline'/>
           </Menu.Item>
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Menu.Item as={NavLink} activeClassName="active" exact to="/analytics" key='admin'>
                 Analytics
-                <Icon name='line graph' inverted/>
+                <Icon name='line graph'/>
               </Menu.Item>
           ) : ''}
             <Menu.Item position='right'>
               {this.props.currentUser === '' ? (
-                  <Dropdown id="login-dropdown" pointing="top right" icon={'user'}>
+                  <Dropdown id="login-dropdown" text='Login' pointing="top right" icon={'user'}>
                     <Dropdown.Menu>
                       <Dropdown.Item id="login-dropdown-sign-in" icon="user" text="Sign In" as={NavLink} exact
                                      to="/signin"/>

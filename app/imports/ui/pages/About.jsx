@@ -3,10 +3,11 @@ import { Container, Header } from 'semantic-ui-react';
 
 export default class About extends React.Component {
   render() {
+    const white = { color: 'white' };
     return (
         <div className="spacing">
-          <Container text>
-            <Header as='h1' textAlign='center'>About Covid Convo</Header>
+          <Container text style={white}>
+            <Header as='h1' textAlign='center' inverted>About Covid Convo</Header>
             <p>Hawaii Covid Convo was made to improve the customer experience while providing easy navigation and
               providing
               useful and helpful resources for Hawaii.
