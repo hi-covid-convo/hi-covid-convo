@@ -8,13 +8,12 @@ export default class Cece extends React.Component {
   render() {
     const botStyle = {
       border: 'none',
-      backgroundColor: '#2B313E',
     };
     return (
         <div className="chatbot">
-          <Grid container centered stackable columns={2}>
+          <Grid container centered stackable row={2}>
 
-            <Grid.Column textAlign='center'>
+            <Grid.Row textAlign='center'>
               <Header as='h1' inverted color='grey'>Meet Cece!</Header>
               <Header as='h3' inverted color='grey'>
                 Meet the Hawaii Covid-19 chat-bot, Cece! If you have any questions that you have wanted to
@@ -31,9 +30,9 @@ export default class Cece extends React.Component {
                 to let us know how helpful Cece
                 was!
               </Header>
-            </Grid.Column>
+            </Grid.Row>
 
-            <Grid.Column textAlign='center'>
+            <Grid.Row textAlign='center'>
               <iframe
                   style={botStyle}
                   width="700"
@@ -41,8 +40,7 @@ export default class Cece extends React.Component {
                   allow="microphone;"
                   src="https://console.dialogflow.com/api-client/demo/embedded/efa452bd-9d6e-4580-9aa0-5800d8027fdf">
               </iframe>
-
-            </Grid.Column>
+            </Grid.Row>
           </Grid>
         </div>
     );

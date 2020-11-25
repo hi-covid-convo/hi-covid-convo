@@ -47,8 +47,8 @@ class Feedback extends React.Component {
         <div className="spacing">
           <Grid container centered>
             <Grid.Column>
-              <Header as="h2" textAlign="center">Feedback</Header>
-              <Header as="h4" textAlign="center">Please complete the form below.</Header>
+              <Header as="h2" textAlign="center" inverted>Feedback</Header>
+              <Header as="h4" textAlign="center" inverted>Please complete the form below.</Header>
               <AutoForm ref={ref => {
                 fRef = ref;
               }} schema={bridge} onSubmit={data => this.submit(data, fRef)}>
