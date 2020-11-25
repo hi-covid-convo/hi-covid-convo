@@ -22,7 +22,7 @@ export default class General extends React.Component {
             </p>
             <Header as='h2'>Spread</Header>
             <p>
-              OVID-19 is highly contagious, and is spread by close contact with someone who is infected (close contact
+              COVID-19 is highly contagious, and is spread by close contact with someone who is infected (close contact
               is defined as about 6 feet, or two arm lengths). It spreads by respiratory droplets when an infected
               person
               coughs, sneezes, or talks. You may also contract the virus by touch. Touching a surface or object that has
