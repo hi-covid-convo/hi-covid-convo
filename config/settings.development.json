@@ -3,21 +3,61 @@
     "appId": "CrNfnurjdZbbCK9ZG",
     "appSecret": "e5d28026-064e-4f8e-96cd-e7535247d5af"
   },
-
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    {
+      "email": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin"
+    },
+    {
+      "email": "john@foo.com",
+      "password": "changeme"
+    }
   ],
-
   "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    {
+      "name": "Basket",
+      "quantity": 3,
+      "owner": "john@foo.com",
+      "condition": "excellent"
+    },
+    {
+      "name": "Bicycle",
+      "quantity": 2,
+      "owner": "john@foo.com",
+      "condition": "poor"
+    },
+    {
+      "name": "Banana",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "good"
+    },
+    {
+      "name": "Boogie Board",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "excellent"
+    }
   ],
   "defaultFeedback": [
-    { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
-    { "rating": "excellent", "howHelpfulWasCece": "Not very helpful", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
-    { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" }
+    {
+      "rating": "good",
+      "howHelpfulWasCece": "Somewhat helpful",
+      "whatCanBeImproved": "everything lol",
+      "finalThoughts": "please fix everything"
+    },
+    {
+      "rating": "excellent",
+      "howHelpfulWasCece": "Not very helpful",
+      "whatCanBeImproved": "everything lol",
+      "finalThoughts": "please fix everything"
+    },
+    {
+      "rating": "poor",
+      "howHelpfulWasCece": "Not helpful at all",
+      "whatCanBeImproved": "everything lol",
+      "finalThoughts": "please fix everything"
+    }
   ]
 }
