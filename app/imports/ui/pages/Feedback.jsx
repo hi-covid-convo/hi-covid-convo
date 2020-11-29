@@ -32,8 +32,8 @@ class Feedback extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { rating, howHelpfulWasCece, finalThoughts, whatCanBeImproved, wouldYouRecommendCece } = data;
-    Reviews.collection.insert({ rating, howHelpfulWasCece, finalThoughts, whatCanBeImproved, wouldYouRecommendCece },
+    const { rating, howHelpfulWasCece, wouldYouRecommendCece, whatCanBeImproved, finalThoughts } = data;
+    Reviews.collection.insert({ rating, howHelpfulWasCece, wouldYouRecommendCece, whatCanBeImproved, finalThoughts },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
