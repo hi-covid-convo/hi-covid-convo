@@ -2,7 +2,7 @@ import React from 'react';
 import { Table } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
-/** Renders a single row in the List Stuff (Admin) table. See pages/ListStuffAdmin.jsx. */
+/** Renders a single row in the Analytics table. See pages/Analytics.jsx. */
 class ReviewItemAdmin extends React.Component {
   render() {
     return (
