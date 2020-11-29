@@ -16,8 +16,8 @@
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
   "defaultFeedback": [
-    { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
-    { "rating": "excellent", "howHelpfulWasCece": "Not very helpful", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
-    { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" }
+    { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
+    { "rating": "excellent", "howHelpfulWasCece": "Not very helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
+    { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "wouldYouRecommendCece": "No","whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" }
   ]
 }

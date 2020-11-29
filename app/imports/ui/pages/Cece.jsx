@@ -11,7 +11,7 @@ export default class Cece extends React.Component {
     };
     return (
         <div className="chatbot">
-          <Grid container centered stackable row={2}>
+          <Grid container centered stackable row={3}>
 
             <Grid.Row textAlign='center'>
               <Header as='h1' inverted color='grey'>Meet Cece!</Header>
@@ -40,6 +40,16 @@ export default class Cece extends React.Component {
                   allow="microphone;"
                   src="https://console.dialogflow.com/api-client/demo/embedded/efa452bd-9d6e-4580-9aa0-5800d8027fdf">
               </iframe>
+            </Grid.Row>
+            <Grid.Row>
+
+              <Header as='h4' inverted color='grey'>
+                All information provided from Cece are not directly from us and are not claimed by us.
+                They are gathered from online websites such as the Center for Disease Control and Prevention (CDC),
+                hawaiicovid19, health.hawaii.gov, and oneoahu.org.
+                For more information on the resources used for the Cece chat-bot, please visit out Resources page
+                linked in the footer.
+              </Header>
             </Grid.Row>
           </Grid>
         </div>

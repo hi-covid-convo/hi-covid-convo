@@ -26,6 +26,7 @@ class Analytics extends React.Component {
                 <Table.Row>
                   <Table.HeaderCell>How Satisfied Were You?</Table.HeaderCell>
                   <Table.HeaderCell>How Helpful was Cece?</Table.HeaderCell>
+                  <Table.HeaderCell>Would you recommend Cece?</Table.HeaderCell>
                   <Table.HeaderCell>What Can Be Improved?</Table.HeaderCell>
                   <Table.HeaderCell>Final Thoughts?</Table.HeaderCell>
                 </Table.Row>
@@ -33,16 +34,6 @@ class Analytics extends React.Component {
               <Table.Body>
                 {this.props.reviews.map((review) => <ReviewItemAdmin key={review._id} review={review}/>)}
               </Table.Body>
-            </Table>
-
-            <Header as="h3" textAlign="center" inverted>Did Cece Help?</Header>
-            <Table celled>
-              <Table.Header>
-                <Table.Row>
-                  <Table.HeaderCell>Yes</Table.HeaderCell>
-                  <Table.HeaderCell>No</Table.HeaderCell>
-                </Table.Row>
-              </Table.Header>
             </Table>
           </Container>
         </div>

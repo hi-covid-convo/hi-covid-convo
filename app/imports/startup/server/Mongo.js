@@ -11,7 +11,7 @@ function addData(data) {
 }
 
 function addReview(data) {
-  console.log(`  Adding: ${data.name} (${data.owner})`);
+  console.log('  Adding: data (user not required)');
   Reviews.collection.insert(data);
 }
 

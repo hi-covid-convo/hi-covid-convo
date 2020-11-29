@@ -9,6 +9,7 @@ class ReviewItemAdmin extends React.Component {
         <Table.Row>
           <Table.Cell>{this.props.review.rating}</Table.Cell>
           <Table.Cell>{this.props.review.howHelpfulWasCece}</Table.Cell>
+          <Table.Cell>{this.props.review.wouldYouRecommendCece}</Table.Cell>
           <Table.Cell>{this.props.review.whatCanBeImproved}</Table.Cell>
           <Table.Cell>{this.props.review.finalThoughts}</Table.Cell>
         </Table.Row>

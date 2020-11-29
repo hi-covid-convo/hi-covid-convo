@@ -20,6 +20,10 @@ class ReviewsCollection {
         type: String,
         allowedValues: ['Very helpful', 'Somewhat helpful', 'Not very helpful', 'Not helpful at all'],
       },
+      wouldYouRecommendCece: {
+        type: String,
+        allowedValues: ['Yes', 'No'],
+      },
       whatCanBeImproved: String,
       finalThoughts: String,
     }, { tracker: Tracker });

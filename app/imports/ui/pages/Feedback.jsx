@@ -17,6 +17,10 @@ const formSchema = new SimpleSchema({
     type: String,
     allowedValues: ['Very helpful', 'Somewhat helpful', 'Not very helpful', 'Not helpful at all'],
   },
+  wouldYouRecommendCece: {
+    type: String,
+    allowedValues: ['Yes', 'No'],
+  },
   whatCanBeImproved: String,
   finalThoughts: String,
 });
@@ -28,8 +32,8 @@ class Feedback extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { rating, howHelpfulWasCece, finalThoughts, whatCanBeImproved } = data;
-    Reviews.collection.insert({ rating, howHelpfulWasCece, finalThoughts, whatCanBeImproved },
+    const { rating, howHelpfulWasCece, finalThoughts, whatCanBeImproved, wouldYouRecommendCece } = data;
+    Reviews.collection.insert({ rating, howHelpfulWasCece, finalThoughts, whatCanBeImproved, wouldYouRecommendCece },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
@@ -55,6 +59,7 @@ class Feedback extends React.Component {
                 <Segment>
                   <SelectField name='rating'/>
                   <RadioField name='howHelpfulWasCece'/>
+                  <RadioField name='wouldYouRecommendCece'/>
                   <LongTextField name='whatCanBeImproved'/>
                   <LongTextField name='finalThoughts'/>
                   <SubmitField value='Submit'/>
