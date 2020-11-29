@@ -5,6 +5,10 @@ import { Link } from 'react-router-dom';
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
+    const red = {
+      backgroundColor: '#CE572C',
+      color: '#fff',
+    };
     return (
         <div className='middlepage'>
           <Container text textAlign='center'>
@@ -17,7 +21,7 @@ class Landing extends React.Component {
               our About page.</p>
             <hr/>
             <div className='spacing'>
-              <Button circular color='instagram' icon='chat' as={Link} to='/Cece' size='huge'>
+              <Button circular style={red} icon='chat' as={Link} to='/Cece' size='huge'>
               </Button>
               <Header as='h4' inverted>Ask Cece!</Header>
             </div>
