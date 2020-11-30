@@ -5,7 +5,7 @@
   },
 
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
+    { "email": "glarita@hawaii.edu", "password": "c0mputer" },
     { "email": "john@foo.com", "password": "changeme" }
   ],
 
