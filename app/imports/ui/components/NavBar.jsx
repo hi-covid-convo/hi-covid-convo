@@ -4,7 +4,6 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Image, Icon } from 'semantic-ui-react';
-import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 /** Only users that will be able to log in are admin users, and they will have one extra tab in the navbar called
@@ -33,8 +32,8 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/general">
             General Knowledge <Icon name='question circle outline'/>
           </Menu.Item>
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/analytics" key='admin'>
+          {this.props.currentUser ? (
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/analytics" key='analytics'>
                 Analytics
                 <Icon name='line graph'/>
               </Menu.Item>
