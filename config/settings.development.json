@@ -6,6 +6,7 @@
 
   "defaultAccounts": [
     { "email": "glarita@hawaii.edu", "password": "c0mputer" },
+    { "email": "dnilo@hawaii.edu", "password": "h0tp0tat0" },
     { "email": "john@foo.com", "password": "changeme" }
   ],
 
