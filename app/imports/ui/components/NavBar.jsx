@@ -24,7 +24,7 @@ class NavBar extends React.Component {
     return (
         <Menu style={menuStyle} attached="top" borderless fluid stackable>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Image src='../images/logo2.png' size='tiny'/>
+            <Image src='../images/logo2NEW.png' size='tiny'/>
           </Menu.Item>
           <Menu.Item as={NavLink} activeClassName="" exact to="/about">
             About <Icon name='info circle'/>
