@@ -8,7 +8,7 @@ class Footer extends React.Component {
       color: 'white',
     };
     return (
-        <footer>
+        <footer as="footer4">
           <div style={divStyle} className="ui center aligned container">
             <p>Hawaii Covid Convo team</p>
             <p>Glen Larita, Sydney Dempsey, Daniel Nilo, Brian Abad</p>
