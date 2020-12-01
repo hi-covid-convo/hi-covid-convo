@@ -2,11 +2,12 @@ import React from 'react';
 import { PieChart } from 'react-minimal-pie-chart';
 import _ from 'lodash';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Table, Grid } from 'semantic-ui-react';
+import { Container, Header, Loader, Table, Grid, Label } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Reviews } from '../../api/review/Reviews';
 import ReviewItemAdmin from '../components/ReviewItemAdmin';
+import tiffBlue from '../../../public/images/tiffBlue.jpg';
 
 /** Renders the statistics of the application and the reviews on the chat-bot */
 class Analytics extends React.Component {
@@ -48,9 +49,9 @@ class Analytics extends React.Component {
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>Rating</Header>
                   <PieChart
-                      center={[50, 38]}
+                      center={[50, 40]}
                       data={[
-                        { title: 'Excellent', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; })), color: '#E38627' },
+                        { title: 'Excellent', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; })), color: '#3ebfb2' },
                         { title: 'Good', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; })), color: '#C13C37' },
                         { title: 'Fair', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; })), color: '#6A2135' },
                         { title: 'Poor', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; })), color: '#f84211' },
@@ -66,7 +67,7 @@ class Analytics extends React.Component {
                       viewBoxSize={[100, 100]}
                       // label={({ dataEntry }) => dataEntry.value}
                       label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
-                  />;
+                  />
                 </Grid.Column>
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>How Helpful</Header>
@@ -79,6 +80,18 @@ class Analytics extends React.Component {
               <Grid.Row>
                 <Grid.Column>
                   <Header as="h3" textAlign="center" inverted>Legend:</Header>
+                  <Label as='legend1' image>
+                    <img src= {tiffBlue} />
+                    Excellent
+                  </Label>
+                  <Label as='legend2' image>
+                    <img src='/images/avatar/small/elliot.jpg' />
+                    Elliot
+                  </Label>
+                  <Label as='legend3' image>
+                    <img src='/images/avatar/small/stevie.jpg' />
+                    Stevie
+                  </Label>
                 </Grid.Column>
                 <Grid.Column>
                   <Header as="h3" textAlign="center" inverted>Legend:</Header>
