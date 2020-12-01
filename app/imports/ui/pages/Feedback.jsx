@@ -48,7 +48,7 @@ class Feedback extends React.Component {
   render() {
     let fRef = null;
     return (
-        <div className="spacing">
+        <div className="spacing" id="feedback-page">
           <Grid container centered>
             <Grid.Column>
               <Header as="h2" textAlign="center" inverted>Feedback</Header>

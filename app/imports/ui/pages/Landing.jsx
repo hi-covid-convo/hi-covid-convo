@@ -10,7 +10,7 @@ class Landing extends React.Component {
       color: '#fff',
     };
     return (
-        <div className='middlepage'>
+        <div className='middlepage' id='landing-page'>
           <Container text textAlign='center'>
             <Header as='h1' inverted>Welcome to Covid Convo</Header>
             <p className='landingText'>Our goal is simple, to provide an easy-to-use chatbot for those concerned with
@@ -21,7 +21,7 @@ class Landing extends React.Component {
               our About page.</p>
             <hr/>
             <div className='spacing'>
-              <Button circular style={red} icon='chat' as={Link} to='/Cece' size='huge'>
+              <Button circular style={red} icon='chat' id="chatbot" as={Link} to='/Cece' size='huge'>
               </Button>
               <Header as='h4' inverted>Ask Cece!</Header>
             </div>

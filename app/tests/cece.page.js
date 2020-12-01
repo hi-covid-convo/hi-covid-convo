@@ -1,8 +1,8 @@
 import { Selector } from 'testcafe';
 
-class LandingPage {
+class CecePage {
   constructor() {
-    this.pageId = '#landing-page';
+    this.pageId = '#cece-page';
     this.pageSelector = Selector(this.pageId);
   }
 
@@ -11,9 +11,10 @@ class LandingPage {
     await testController.expect(this.pageSelector.exists).ok();
   }
 
-  async gotoCece(testController) {
-    await testController.click('#chatbot');
+  async gotoFeedback(testController) {
+    await this.isDisplayed(testController);
+    await testController.click('#feedback');
   }
 }
 
-export const landingPage = new LandingPage();
+export const cecePage = new CecePage();
