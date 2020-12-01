@@ -14,7 +14,7 @@
   "defaultFeedback": [
     { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
     { "rating": "excellent", "howHelpfulWasCece": "Not very helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
-    { "rating": "fair", "howHelpfulWasCece": "Somewhat helpful", "wouldYouRecommendCece": "Yes", "whatCanBeImproved": "most of it :(", "finalThoughts": "please fix everything" },
+    { "rating": "fair", "howHelpfulWasCece": "Very helpful", "wouldYouRecommendCece": "Yes", "whatCanBeImproved": "most of it :(", "finalThoughts": "please fix everything" },
     { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "wouldYouRecommendCece": "No","whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" }
   ]
 }

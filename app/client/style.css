@@ -1,11 +1,19 @@
 .middlepage {
-  background: url('images/backgroundImage2.jpg') no-repeat center center fixed;
+  background: url('images/backgroundNEW.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
+}
+.landingText {
+  color: whitesmoke !important;
+  opacity: 1 !important;
+}
+h1.ui.inverted.header {
+  color: whitesmoke !important;
+  opacity: 1 !important;
 }
 
 .chatbot {
@@ -15,6 +23,7 @@
 
 .landingText {
   color: whitesmoke;
+  opacity: 1 !important;
 }
 
 .spacing {
@@ -45,4 +54,14 @@ legend4.ui.label {
 }
 div.column {
   align-items: center;
+}
+div.ui.text.center.aligned.container {
+  padding: 10px 100px 10px 100px;
+
+  background: url('images/lightBlue.png') no-repeat center center fixed !important;
+}
+a.ui.huge.circular.icon.button {
+  background-color: #ddaf78 !important;
+}
+footer {
 }
