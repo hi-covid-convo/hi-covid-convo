@@ -19,9 +19,9 @@ class Analytics extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     // const ratingExcell = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; }));
-    const ratingGood = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; }));
-    const ratingFair = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; }));
-    const ratingPoor = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; }));
+    // const ratingGood = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; }));
+    // const ratingFair = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; }));
+    // const ratingPoor = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; }));
     return (
         <div className="spacing">
           <Container>
@@ -42,19 +42,24 @@ class Analytics extends React.Component {
               </Table.Body>
             </Table>
           </Container>
-          <Container>
+          <Container as = "h4">
             <Grid columns={3} divided>
               <Grid.Row>
                 <Grid.Column>
-                  <Header Centered>Rating</Header>
+                  <Header as="h2" textAlign="center" inverted>Rating</Header>
                   <PieChart
-                      center={[50, 50]}
+                      center={[50, 38]}
                       data={[
                         { title: 'Excellent', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; })), color: '#E38627' },
-                        { title: 'Good', value: ratingGood, color: '#C13C37' },
-                        { title: 'Fair', value: ratingFair, color: '#6A2135' },
-                        { title: 'Poor', value: ratingPoor, color: '#f84211' },
+                        { title: 'Good', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; })), color: '#C13C37' },
+                        { title: 'Fair', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; })), color: '#6A2135' },
+                        { title: 'Poor', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; })), color: '#f84211' },
                       ]}
+                      labelStyle={{
+                        fontSize: '11px',
+                        fill: '#ffffff',
+                        fontWeight: '800',
+                      }}
                       labelPosition={60}
                       paddingAngle={0}
                       radius={50}
@@ -64,22 +69,22 @@ class Analytics extends React.Component {
                   />;
                 </Grid.Column>
                 <Grid.Column>
-                  <Header>How Helpful</Header>
+                  <Header as="h2" textAlign="center" inverted>How Helpful</Header>
                 </Grid.Column>
                 <Grid.Column>
-                  <Header>Would You Recommend?</Header>
+                  <Header as="h2" textAlign="center" inverted>Would You Recommend?</Header>
                 </Grid.Column>
               </Grid.Row>
 
               <Grid.Row>
                 <Grid.Column>
-                  <Header>Legend:</Header>
+                  <Header as="h3" textAlign="center" inverted>Legend:</Header>
                 </Grid.Column>
                 <Grid.Column>
-                  <Header>Legend:</Header>
+                  <Header as="h3" textAlign="center" inverted>Legend:</Header>
                 </Grid.Column>
                 <Grid.Column>
-                  <Header>Legend:</Header>
+                  <Header as="h3" textAlign="center" inverted>Legend:</Header>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
