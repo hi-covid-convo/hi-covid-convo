@@ -1,4 +1,6 @@
 import React from 'react';
+import { PieChart } from 'react-minimal-pie-chart';
+import _ from 'lodash';
 import { Meteor } from 'meteor/meteor';
 import { Container, Header, Loader, Table } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -16,6 +18,10 @@ class Analytics extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
+    const ratingExcell = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; }));
+    const ratingGood = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; }));
+    const ratingFair = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; }));
+    const ratingPoor = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; }));
     return (
         <div className="spacing">
           <Container>
@@ -35,6 +41,23 @@ class Analytics extends React.Component {
                 {this.props.reviews.map((review) => <ReviewItemAdmin key={review._id} review={review}/>)}
               </Table.Body>
             </Table>
+          </Container>
+          <Container>
+            <PieChart
+                center={[50, 50]}
+                data={[
+                  { title: 'Excellent', value: ratingExcell, color: '#E38627' },
+                  { title: 'Good', value: ratingGood, color: '#C13C37' },
+                  { title: 'Fair', value: ratingFair, color: '#6A2135' },
+                  { title: 'Poor', value: ratingPoor, color: '#f84211' },
+                ]}
+                labelPosition={60}
+                paddingAngle={0}
+                radius={50}
+                viewBoxSize={[300, 300]}
+                label={({ dataEntry }) => dataEntry.value}
+                // label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
+            />;
           </Container>
         </div>
     );
