@@ -117,6 +117,7 @@ class Analytics extends React.Component {
 
               <Grid.Row>
                 <Grid.Column>
+                  <Container as ="LabelsCenter">
                   <Label as='legend1'>
                     Excellent
                   </Label>
@@ -129,8 +130,10 @@ class Analytics extends React.Component {
                   <Label as ='legend4' centered>
                     Poor
                   </Label>
+                  </Container>
                 </Grid.Column>
                 <Grid.Column>
+                  <Container as ="LabelsCenter">
                   <Label as='legend1'>
                     Very
                   </Label>
@@ -143,14 +146,17 @@ class Analytics extends React.Component {
                   <Label as ='legend4' centered>
                     Not at All
                   </Label>
+                  </Container>
                 </Grid.Column>
                 <Grid.Column>
+                  <Container as ="LabelsCenter">
                   <Label as='legend1'>
                     Yes
                   </Label>
                   <Label as='legend2' centered>
                     No
                   </Label>
+                  </Container>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
