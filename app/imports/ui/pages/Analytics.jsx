@@ -142,14 +142,16 @@ class Analytics extends React.Component {
                   </Label>
                   <Label as ='legend4' centered>
                     Not at All
-                  </Label>                </Grid.Column>
+                  </Label>
+                </Grid.Column>
                 <Grid.Column>
                   <Label as='legend1'>
                     Yes
                   </Label>
                   <Label as='legend2' centered>
                     No
-                  </Label>                </Grid.Column>
+                  </Label>
+                </Grid.Column>
               </Grid.Row>
             </Grid>
           </Container>
