@@ -24,3 +24,25 @@
 .h4 {
   padding-top: 90px !important;
 }
+
+legend1.ui.label {
+  background-color: #3ebfb2 !important;
+  color: whitesmoke;
+}
+
+legend2.ui.label {
+  background-color: #0077b6 !important;
+  color: whitesmoke;
+}
+
+legend3.ui.label {
+  background-color: #1a535c !important;
+  color: whitesmoke;
+}
+legend4.ui.label {
+  background-color: #012a4a !important;
+  color: whitesmoke;
+}
+div.column {
+  align-items: center;
+}

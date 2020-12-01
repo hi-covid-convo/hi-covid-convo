@@ -7,7 +7,6 @@ import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Reviews } from '../../api/review/Reviews';
 import ReviewItemAdmin from '../components/ReviewItemAdmin';
-import tiffBlue from '../../../public/images/tiffBlue.jpg';
 
 /** Renders the statistics of the application and the reviews on the chat-bot */
 class Analytics extends React.Component {
@@ -52,9 +51,9 @@ class Analytics extends React.Component {
                       center={[50, 40]}
                       data={[
                         { title: 'Excellent', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; })), color: '#3ebfb2' },
-                        { title: 'Good', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; })), color: '#C13C37' },
-                        { title: 'Fair', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; })), color: '#6A2135' },
-                        { title: 'Poor', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; })), color: '#f84211' },
+                        { title: 'Good', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; })), color: '#0077b6' },
+                        { title: 'Fair', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; })), color: '#1a535c' },
+                        { title: 'Poor', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; })), color: '#012a4a' },
                       ]}
                       labelStyle={{
                         fontSize: '11px',
@@ -71,34 +70,86 @@ class Analytics extends React.Component {
                 </Grid.Column>
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>How Helpful</Header>
+                  <PieChart
+                      center={[50, 40]}
+                      data={[
+                        { title: 'Very Helpful', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.howHelpfulWasCece === 'Very helpful'; })), color: '#3ebfb2' },
+                        { title: 'Somewhat Helpful', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.howHelpfulWasCece === 'Somewhat helpful'; })), color: '#0077b6' },
+                        { title: 'Not Very Helpful', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.howHelpfulWasCece === 'Not very helpful'; })), color: '#1a535c' },
+                        // eslint-disable-next-line max-len
+                        { title: 'Not Helpful at All', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.howHelpfulWasCece === 'Not helpful at all'; })), color: '#012a4a' },
+                      ]}
+                      labelStyle={{
+                        fontSize: '11px',
+                        fill: '#ffffff',
+                        fontWeight: '800',
+                      }}
+                      labelPosition={60}
+                      paddingAngle={0}
+                      radius={50}
+                      viewBoxSize={[100, 100]}
+                      // label={({ dataEntry }) => dataEntry.value}
+                      label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
+                  />
                 </Grid.Column>
                 <Grid.Column>
-                  <Header as="h2" textAlign="center" inverted>Would You Recommend?</Header>
+                  <Header as="h2" textAlign="center" inverted>Recommend</Header>
+                  <PieChart
+                      center={[50, 40]}
+                      data={[
+                        { title: 'Yes', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.wouldYouRecommendCece === 'Yes'; })), color: '#3ebfb2' },
+                        { title: 'No', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.wouldYouRecommendCece === 'No'; })), color: '#0077b6' },
+                      ]}
+                      labelStyle={{
+                        fontSize: '11px',
+                        fill: '#ffffff',
+                        fontWeight: '800',
+                      }}
+                      labelPosition={60}
+                      paddingAngle={0}
+                      radius={50}
+                      viewBoxSize={[100, 100]}
+                      // label={({ dataEntry }) => dataEntry.value}
+                      label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
+                  />
                 </Grid.Column>
               </Grid.Row>
 
               <Grid.Row>
                 <Grid.Column>
-                  <Header as="h3" textAlign="center" inverted>Legend:</Header>
-                  <Label as='legend1' image>
-                    <img src= {tiffBlue} />
+                  <Label as='legend1'>
                     Excellent
                   </Label>
-                  <Label as='legend2' image>
-                    <img src='/images/avatar/small/elliot.jpg' />
-                    Elliot
+                  <Label as='legend2' centered>
+                    Good
                   </Label>
-                  <Label as='legend3' image>
-                    <img src='/images/avatar/small/stevie.jpg' />
-                    Stevie
+                  <Label as='legend3' centered>
+                    Fair
+                  </Label>
+                  <Label as ='legend4' centered>
+                    Poor
                   </Label>
                 </Grid.Column>
                 <Grid.Column>
-                  <Header as="h3" textAlign="center" inverted>Legend:</Header>
-                </Grid.Column>
+                  <Label as='legend1'>
+                    Very
+                  </Label>
+                  <Label as='legend2' centered>
+                    Somewhat
+                  </Label>
+                  <Label as='legend3' centered>
+                    Not Very
+                  </Label>
+                  <Label as ='legend4' centered>
+                    Not at All
+                  </Label>                </Grid.Column>
                 <Grid.Column>
-                  <Header as="h3" textAlign="center" inverted>Legend:</Header>
-                </Grid.Column>
+                  <Label as='legend1'>
+                    Yes
+                  </Label>
+                  <Label as='legend2' centered>
+                    No
+                  </Label>                </Grid.Column>
               </Grid.Row>
             </Grid>
           </Container>
