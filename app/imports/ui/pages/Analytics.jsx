@@ -48,7 +48,7 @@ class Analytics extends React.Component {
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>Rating</Header>
                   <PieChart
-                      center={[50, 40]}
+                      center={[52, 45]}
                       data={[
                         { title: 'Excellent', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; })), color: '#3ebfb2' },
                         { title: 'Good', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; })), color: '#0077b6' },
@@ -63,7 +63,7 @@ class Analytics extends React.Component {
                       labelPosition={60}
                       paddingAngle={0}
                       radius={50}
-                      viewBoxSize={[100, 100]}
+                      viewBoxSize={[110, 110]}
                       // label={({ dataEntry }) => dataEntry.value}
                       label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
                   />
@@ -71,7 +71,7 @@ class Analytics extends React.Component {
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>How Helpful</Header>
                   <PieChart
-                      center={[50, 40]}
+                      center={[52, 45]}
                       data={[
                         { title: 'Very Helpful', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.howHelpfulWasCece === 'Very helpful'; })), color: '#3ebfb2' },
                         { title: 'Somewhat Helpful', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.howHelpfulWasCece === 'Somewhat helpful'; })), color: '#0077b6' },
@@ -87,7 +87,7 @@ class Analytics extends React.Component {
                       labelPosition={60}
                       paddingAngle={0}
                       radius={50}
-                      viewBoxSize={[100, 100]}
+                      viewBoxSize={[110, 110]}
                       // label={({ dataEntry }) => dataEntry.value}
                       label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
                   />
@@ -95,7 +95,7 @@ class Analytics extends React.Component {
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>Recommend</Header>
                   <PieChart
-                      center={[50, 40]}
+                      center={[52, 45]}
                       data={[
                         { title: 'Yes', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.wouldYouRecommendCece === 'Yes'; })), color: '#3ebfb2' },
                         { title: 'No', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.wouldYouRecommendCece === 'No'; })), color: '#0077b6' },
@@ -108,7 +108,7 @@ class Analytics extends React.Component {
                       labelPosition={60}
                       paddingAngle={0}
                       radius={50}
-                      viewBoxSize={[100, 100]}
+                      viewBoxSize={[110, 110]}
                       // label={({ dataEntry }) => dataEntry.value}
                       label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
                   />
