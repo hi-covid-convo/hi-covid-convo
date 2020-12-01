@@ -63,5 +63,8 @@ div.ui.text.center.aligned.container {
 a.ui.huge.circular.icon.button {
   background-color: #ddaf78 !important;
 }
-footer {
+LabelsCenter.ui.container {
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
