@@ -28,25 +28,45 @@ test('Test that signin and signout work', async (testController) => {
   await signoutPage.isDisplayed(testController);
 });
 
-test('Test that about and general pages work', async (testController) => {
-  await navBar.gotoSigninPage(testController);
-  await signinPage.signin(testController, credentials.username, credentials.password);
+test('Test pages for anonymous users', async (testController) => {
+  await landingPage.isDisplayed(testController);
+  await testController.wait(500);
   await navBar.gotoAboutPage(testController);
   await aboutPage.isDisplayed(testController);
+  await testController.wait(500);
   await navBar.gotoGeneralPage(testController);
   await generalPage.isDisplayed(testController);
 });
 
-test('Test that Analytics work', async (testController) => {
+test('Test pages for login users', async (testController) => {
+  await landingPage.isDisplayed(testController);
+  await testController.wait(500);
   await navBar.gotoSigninPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
+  await testController.wait(500);
+  await navBar.gotoAboutPage(testController);
+  await aboutPage.isDisplayed(testController);
+  await testController.wait(500);
+  await navBar.gotoGeneralPage(testController);
+  await generalPage.isDisplayed(testController);
+  await testController.wait(500);
   await navBar.gotoAnalyticsPage(testController);
   await analyticsPage.isDisplayed(testController);
+  await testController.wait(500);
 });
 
-test('Test that Cece chatbot page shows up', async (testController) => {
+test('Test that Cece chatbot page shows up (Anonymous and login)', async (testController) => {
+  await landingPage.isDisplayed(testController);
+  await testController.wait(500);
   await landingPage.gotoCece(testController);
   await cecePage.isDisplayed(testController);
+  await testController.wait(500);
+  await navBar.gotoSigninPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await testController.wait(250);
+  await landingPage.gotoCece(testController);
+  await cecePage.isDisplayed(testController);
+  await testController.wait(500);
 });
 
 test('Test that Feedback page works', async (testController) => {
