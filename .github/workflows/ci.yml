@@ -3,7 +3,7 @@ name: hi-covid-convo
 on:
   push:
     branches:
-      - master
+      - main
 
 defaults:
   run:
@@ -33,6 +33,8 @@ jobs:
 
       - uses: meteorengineer/setup-meteor@v1
       - run: meteor npm install
+      - run: npm install underscore
+      - run: npm install react-minimal-pie-chart
       - run: meteor npm run lint
       - run: meteor npm run testcafe
 
