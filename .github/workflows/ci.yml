@@ -1,4 +1,4 @@
-name: hi-covid-convo
+name: CI-hi-covid-convo
 
 on:
   push:
