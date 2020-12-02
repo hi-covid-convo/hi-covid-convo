@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
-    const red = {
-      backgroundColor: '#181a0c',
+    const white = {
       color: '#fff',
     };
     return (
         <div className='middlepage' id='landing-page'>
-          <Container text textAlign='center'>
-            <div></div>
+          <Container text textAlign='center' className='lightblue'>
             <Header as='h1' inverted>Welcome to Covid Convo</Header>
             <p className='landingText'>Our goal is simple, to provide an easy-to-use chatbot for those concerned with
               COVID-19. Whether
@@ -22,10 +20,9 @@ class Landing extends React.Component {
               About page.</p>
             <hr/>
             <div className='spacing'>
-              <Button circular style={red} icon='chat' id="chatbot" as={Link} to='/Cece' size='huge'>
+              <Button circular style={white} icon='chat' id="chatbot" as={Link} to='/Cece' size='huge'>
               </Button>
               <Header as='h4' inverted >Ask Cece!</Header>
-              <div></div>
             </div>
           </Container>
         </div>

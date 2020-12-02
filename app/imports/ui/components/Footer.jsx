@@ -4,7 +4,7 @@ import React from 'react';
 class Footer extends React.Component {
   render() {
     const divStyle = {
-      padding: '15px 0 15px 0',
+      padding: '40px 0 40px 0',
       color: 'white',
     };
     return (

@@ -9,8 +9,8 @@ export default class Cece extends React.Component {
     const botStyle = {
       border: 'none',
     };
-    const red = {
-      color: '#CE572C',
+    const gold = {
+      color: '#DDAF78',
     };
     return (
         <div className="chatbot" id="cece-page">
@@ -29,7 +29,8 @@ export default class Cece extends React.Component {
                 sources for you so you don&apos;t have to do any research or searching!
               </Header>
               <Header as='h4' inverted color='grey'>
-                Let us know what you think about Cece, and please fill out this <Link id="feedback" to='/Feedback' style={red}>survey </Link>
+                Let us know what you think about Cece, and please fill out this <Link id="feedback" to='/Feedback' style={gold}>survey </Link>
+                Let us know what you think about Cece, and please fill out this <Link to='/Feedback' style={gold}>survey </Link>
                 to let us know how helpful Cece
                 was!
               </Header>

@@ -55,14 +55,16 @@ legend4.ui.label {
 div.column {
   align-items: center;
 }
-div.ui.text.center.aligned.container {
-  padding: 10px 100px 10px 100px;
 
-  background: url('images/lightBlue.png') no-repeat center center fixed !important;
+.lightblue {
+  padding: 30px 100px 30px 100px;
+  background-color: rgba(116, 140, 180, 0.6) !important;
 }
+
 a.ui.huge.circular.icon.button {
   background-color: #ddaf78 !important;
 }
+
 LabelsCenter.ui.container {
   justify-content: center;
   display: flex;

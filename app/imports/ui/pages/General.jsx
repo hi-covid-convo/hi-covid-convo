@@ -5,7 +5,6 @@ import { Container, Header } from 'semantic-ui-react';
 export default class General extends React.Component {
   render() {
     const white = { color: 'white' };
-    const red = { color: '#CE572C' };
     return (
         <div className="spacing" id="general-page">
           <Container text style={white}>
@@ -40,8 +39,7 @@ export default class General extends React.Component {
             </p>
 
             <Header as='h5' textAlign='center' inverted>
-              This information was gathered by the collected by the Centers for Disease Control and Prevention (<a
-                href='https://www.cdc.gov/' target='_blank' rel="noopener noreferrer" style={red}>CDC</a>).
+              This information was gathered by the collected by the Centers for Disease Control and Prevention (CDC).
             </Header>
           </Container>
         </div>

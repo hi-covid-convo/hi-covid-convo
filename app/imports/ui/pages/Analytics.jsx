@@ -22,6 +22,9 @@ class Analytics extends React.Component {
     // const ratingGood = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; }));
     // const ratingFair = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; }));
     // const ratingPoor = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; }));
+    const marginTop = {
+      marginTop: '-40px',
+    };
     return (
         <div className="spacing" id="analytics-page">
           <Container>
@@ -43,12 +46,12 @@ class Analytics extends React.Component {
             </Table>
           </Container>
           <Container as = "h4">
-            <Grid columns={3} divided>
+            <Grid columns={3} divided stackable>
               <Grid.Row>
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>Rating</Header>
                   <PieChart
-                      center={[52, 45]}
+                      center={[55, 50]}
                       data={[
                         { title: 'Excellent', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; })), color: '#3ebfb2' },
                         { title: 'Good', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; })), color: '#0077b6' },
@@ -63,15 +66,29 @@ class Analytics extends React.Component {
                       labelPosition={60}
                       paddingAngle={0}
                       radius={50}
-                      viewBoxSize={[110, 110]}
+                      viewBoxSize={[112.5, 112.5]}
                       // label={({ dataEntry }) => dataEntry.value}
                       label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
                   />
+                  <Container as ="LabelsCenter" style={marginTop}>
+                    <Label as='legend1'>
+                      Excellent
+                    </Label>
+                    <Label as='legend2' centered>
+                      Good
+                    </Label>
+                    <Label as='legend3' centered>
+                      Fair
+                    </Label>
+                    <Label as ='legend4' centered>
+                      Poor
+                    </Label>
+                  </Container>
                 </Grid.Column>
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>How Helpful</Header>
                   <PieChart
-                      center={[52, 45]}
+                      center={[55, 50]}
                       data={[
                         { title: 'Very Helpful', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.howHelpfulWasCece === 'Very helpful'; })), color: '#3ebfb2' },
                         { title: 'Somewhat Helpful', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.howHelpfulWasCece === 'Somewhat helpful'; })), color: '#0077b6' },
@@ -87,15 +104,29 @@ class Analytics extends React.Component {
                       labelPosition={60}
                       paddingAngle={0}
                       radius={50}
-                      viewBoxSize={[110, 110]}
+                      viewBoxSize={[112.5, 112.5]}
                       // label={({ dataEntry }) => dataEntry.value}
                       label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
                   />
+                  <Container as ="LabelsCenter" style={marginTop}>
+                    <Label as='legend1'>
+                      Very
+                    </Label>
+                    <Label as='legend2' centered>
+                      Somewhat
+                    </Label>
+                    <Label as='legend3' centered>
+                      Not Very
+                    </Label>
+                    <Label as ='legend4' centered>
+                      Not at All
+                    </Label>
+                  </Container>
                 </Grid.Column>
                 <Grid.Column>
                   <Header as="h2" textAlign="center" inverted>Recommend</Header>
                   <PieChart
-                      center={[52, 45]}
+                      center={[55, 50]}
                       data={[
                         { title: 'Yes', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.wouldYouRecommendCece === 'Yes'; })), color: '#3ebfb2' },
                         { title: 'No', value: _.size(_.filter(this.props.reviews, function (feedback) { return feedback.wouldYouRecommendCece === 'No'; })), color: '#0077b6' },
@@ -108,54 +139,17 @@ class Analytics extends React.Component {
                       labelPosition={60}
                       paddingAngle={0}
                       radius={50}
-                      viewBoxSize={[110, 110]}
+                      viewBoxSize={[112.5, 112.5]}
                       // label={({ dataEntry }) => dataEntry.value}
                       label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
                   />
-                </Grid.Column>
-              </Grid.Row>
-
-              <Grid.Row>
-                <Grid.Column>
-                  <Container as ="LabelsCenter">
-                  <Label as='legend1'>
-                    Excellent
-                  </Label>
-                  <Label as='legend2' centered>
-                    Good
-                  </Label>
-                  <Label as='legend3' centered>
-                    Fair
-                  </Label>
-                  <Label as ='legend4' centered>
-                    Poor
-                  </Label>
-                  </Container>
-                </Grid.Column>
-                <Grid.Column>
-                  <Container as ="LabelsCenter">
-                  <Label as='legend1'>
-                    Very
-                  </Label>
-                  <Label as='legend2' centered>
-                    Somewhat
-                  </Label>
-                  <Label as='legend3' centered>
-                    Not Very
-                  </Label>
-                  <Label as ='legend4' centered>
-                    Not at All
-                  </Label>
-                  </Container>
-                </Grid.Column>
-                <Grid.Column>
-                  <Container as ="LabelsCenter">
-                  <Label as='legend1'>
-                    Yes
-                  </Label>
-                  <Label as='legend2' centered>
-                    No
-                  </Label>
+                  <Container as ="LabelsCenter" style={marginTop}>
+                    <Label as='legend1'>
+                      Yes
+                    </Label>
+                    <Label as='legend2' centered>
+                      No
+                    </Label>
                   </Container>
                 </Grid.Column>
               </Grid.Row>
