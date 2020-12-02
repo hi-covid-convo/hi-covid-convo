@@ -5,7 +5,7 @@ import { analyticsPage } from './analytics.page';
 import { aboutPage } from './about.page';
 import { generalPage } from './general.page';
 import { cecePage } from './cece.page';
-// import { feedbackPage } from './feedback.page';
+import { feedbackPage } from './feedback.page';
 import { navBar } from './navbar.component';
 
 /* global fixture:false, test:false */
@@ -69,8 +69,8 @@ test('Test that Cece chatbot page shows up (Anonymous and login)', async (testCo
   await testController.wait(500);
 });
 
-// test('Test that Feedback page works', async (testController) => {
-  // await landingPage.gotoCece(testController);
- //  await cecePage.gotoFeedback(testController);
-  // await feedbackPage.fillSurvey(testController);
-// });
+ test('Test that Feedback page works', async (testController) => {
+  await landingPage.gotoCece(testController);
+  await cecePage.gotoFeedback(testController);
+  await feedbackPage.fillSurvey(testController);
+ });
