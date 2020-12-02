@@ -69,8 +69,9 @@ test('Test that Cece chatbot page shows up (Anonymous and login)', async (testCo
   await testController.wait(500);
 });
 
-test('Test that Feedback page works', async (testController) => {
-  await landingPage.gotoCece(testController);
-  await cecePage.gotoFeedback(testController);
-  await feedbackPage.fillSurvey(testController);
-});
+
+// test('Test that Feedback page works', async (testController) => {
+  // await landingPage.gotoCece(testController);
+ //  await cecePage.gotoFeedback(testController);
+  // await feedbackPage.fillSurvey(testController);
+// });
