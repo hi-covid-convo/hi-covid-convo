@@ -10,7 +10,7 @@ class Landing extends React.Component {
       color: '#fff',
     };
     return (
-        <div className='middlepage'>
+        <div className='middlepage' id='landing-page'>
           <Container text textAlign='center'>
             <div></div>
             <Header as='h1' inverted>Welcome to Covid Convo</Header>
@@ -22,7 +22,7 @@ class Landing extends React.Component {
               About page.</p>
             <hr/>
             <div className='spacing'>
-              <Button circular style={red} icon='chat' as={Link} to='/Cece' size='huge'>
+              <Button circular style={red} icon='chat' id="chatbot" as={Link} to='/Cece' size='huge'>
               </Button>
               <Header as='h4' inverted >Ask Cece!</Header>
               <div></div>

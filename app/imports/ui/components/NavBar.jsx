@@ -26,14 +26,14 @@ class NavBar extends React.Component {
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
             <Image src='../images/logo2NEW.png' size='tiny'/>
           </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/about">
+          <Menu.Item id="navbar-about"as={NavLink} activeClassName="" exact to="/about">
             About <Icon name='info circle'/>
           </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/general">
+          <Menu.Item id="navbar-general"as={NavLink} activeClassName="" exact to="/general">
             General Knowledge <Icon name='question circle outline'/>
           </Menu.Item>
           {this.props.currentUser ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/analytics" key='analytics'>
+              <Menu.Item id = "navbar-analytics"as={NavLink} activeClassName="active" exact to="/analytics" key='analytics'>
                 Analytics
                 <Icon name='line graph'/>
               </Menu.Item>

@@ -23,7 +23,7 @@ class Analytics extends React.Component {
     // const ratingFair = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; }));
     // const ratingPoor = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; }));
     return (
-        <div className="spacing">
+        <div className="spacing" id="analytics-page">
           <Container>
             <Header as="h2" textAlign="center" inverted>Analytics</Header>
             <Header as="h3" textAlign="center" inverted>Below displays analytical data of the Cece Chatbot</Header>

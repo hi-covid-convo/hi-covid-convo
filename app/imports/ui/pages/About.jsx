@@ -5,7 +5,7 @@ export default class About extends React.Component {
   render() {
     const white = { color: 'white' };
     return (
-        <div className="spacing">
+        <div className="spacing" id = "about-page">
           <Container text style={white}>
             <Header as='h1' textAlign='center' inverted>About Covid Convo</Header>
             <p>Hawaii Covid Convo was made to improve the customer experience while providing easy navigation and
