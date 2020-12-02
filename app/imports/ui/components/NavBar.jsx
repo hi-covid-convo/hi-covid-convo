@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
-import { Menu, Dropdown, Header, Icon } from 'semantic-ui-react';
-import { Roles } from 'meteor/alanning:roles';
+import { Menu, Dropdown, Image, Icon } from 'semantic-ui-react';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 /** Only users that will be able to log in are admin users, and they will have one extra tab in the navbar called
@@ -14,7 +13,7 @@ class NavBar extends React.Component {
   render() {
     const menuStyle = {
       marginBottom: '10px',
-      backgroundColor: '#E7E7E7',
+      backgroundColor: '#eff5fd',
       border: 0,
       borderRadius: 0,
       margin: 0,
@@ -25,16 +24,16 @@ class NavBar extends React.Component {
     return (
         <Menu style={menuStyle} attached="top" borderless fluid stackable>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header as='h1'>Hawaii Covid Convo</Header>
+            <Image src='../images/logo2NEW.png' size='tiny'/>
           </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/about">
+          <Menu.Item id="navbar-about"as={NavLink} activeClassName="" exact to="/about">
             About <Icon name='info circle'/>
           </Menu.Item>
-          <Menu.Item as={NavLink} activeClassName="" exact to="/general">
+          <Menu.Item id="navbar-general"as={NavLink} activeClassName="" exact to="/general">
             General Knowledge <Icon name='question circle outline'/>
           </Menu.Item>
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/analytics" key='admin'>
+          {this.props.currentUser ? (
+              <Menu.Item id = "navbar-analytics"as={NavLink} activeClassName="active" exact to="/analytics" key='analytics'>
                 Analytics
                 <Icon name='line graph'/>
               </Menu.Item>

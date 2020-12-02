@@ -6,7 +6,7 @@ export default class General extends React.Component {
   render() {
     const white = { color: 'white' };
     return (
-        <div className="spacing">
+        <div className="spacing" id="general-page">
           <Container text style={white}>
             <Header as='h1' textAlign='center' inverted>COVID-19 General Knowledge</Header>
             <p>

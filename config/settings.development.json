@@ -5,13 +5,25 @@
   },
 
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
+    { "email": "glarita@hawaii.edu", "password": "c0mputer" },
+    { "email": "dnilo@hawaii.edu", "password": "h0tp0tat0" },
+    { "email": "dempseys@hawaii.edu", "password": "hydr0flask" },
+    { "email": "babad8@hawaii.edu", "password": "m4tHg33k"},
     { "email": "john@foo.com", "password": "changeme" }
   ],
+
 
   "defaultReviews": [
     { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
     { "rating": "excellent", "howHelpfulWasCece": "Not very helpful", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
     { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" }
+  ],
+
+  "defaultFeedback": [
+    { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
+    { "rating": "excellent", "howHelpfulWasCece": "Not very helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
+    { "rating": "fair", "howHelpfulWasCece": "Very helpful", "wouldYouRecommendCece": "Yes", "whatCanBeImproved": "most of it :(", "finalThoughts": "please fix everything" },
+    { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "wouldYouRecommendCece": "No","whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" }
+
   ]
 }

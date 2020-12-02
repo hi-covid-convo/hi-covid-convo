@@ -9,9 +9,12 @@ export default class Cece extends React.Component {
     const botStyle = {
       border: 'none',
     };
+    const gold = {
+      color: '#DDAF78',
+    };
     return (
-        <div className="chatbot">
-          <Grid container centered stackable row={2}>
+        <div className="chatbot" id="cece-page">
+          <Grid container centered stackable row={3}>
 
             <Grid.Row textAlign='center'>
               <Header as='h1' inverted color='grey'>Meet Cece!</Header>
@@ -26,7 +29,8 @@ export default class Cece extends React.Component {
                 sources for you so you don&apos;t have to do any research or searching!
               </Header>
               <Header as='h4' inverted color='grey'>
-                Let us know what you think about Cece, and please fill out this <Link to='/Feedback'>survey </Link>
+                Let us know what you think about Cece, and please fill out this <Link id="feedback" to='/Feedback' style={gold}>survey </Link>
+                Let us know what you think about Cece, and please fill out this <Link to='/Feedback' style={gold}>survey </Link>
                 to let us know how helpful Cece
                 was!
               </Header>
@@ -40,6 +44,16 @@ export default class Cece extends React.Component {
                   allow="microphone;"
                   src="https://console.dialogflow.com/api-client/demo/embedded/efa452bd-9d6e-4580-9aa0-5800d8027fdf">
               </iframe>
+            </Grid.Row>
+            <Grid.Row>
+
+              <Header as='h4' inverted color='grey'>
+                All information provided from Cece are not directly from us and are not claimed by us.
+                They are gathered from online websites such as the Center for Disease Control and Prevention (CDC),
+                hawaiicovid19, health.hawaii.gov, and oneoahu.org.
+                For more information on the resources used for the Cece chat-bot, please visit out Resources page
+                linked in the footer.
+              </Header>
             </Grid.Row>
           </Grid>
         </div>

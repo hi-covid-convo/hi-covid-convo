@@ -4,11 +4,11 @@ import React from 'react';
 class Footer extends React.Component {
   render() {
     const divStyle = {
-      padding: '15px 0 15px 0',
+      padding: '40px 0 40px 0',
       color: 'white',
     };
     return (
-        <footer>
+        <footer as="footer4">
           <div style={divStyle} className="ui center aligned container">
             <p>Hawaii Covid Convo team</p>
             <p>Glen Larita, Sydney Dempsey, Daniel Nilo, Brian Abad</p>

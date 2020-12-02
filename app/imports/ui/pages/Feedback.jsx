@@ -17,6 +17,10 @@ const formSchema = new SimpleSchema({
     type: String,
     allowedValues: ['Very helpful', 'Somewhat helpful', 'Not very helpful', 'Not helpful at all'],
   },
+  wouldYouRecommendCece: {
+    type: String,
+    allowedValues: ['Yes', 'No'],
+  },
   whatCanBeImproved: String,
   finalThoughts: String,
 });
@@ -28,8 +32,8 @@ class Feedback extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { rating, howHelpfulWasCece, whatCanBeImproved, finalThoughts } = data;
-    Reviews.collection.insert({ rating, howHelpfulWasCece, whatCanBeImproved, finalThoughts },
+    const { rating, howHelpfulWasCece, wouldYouRecommendCece, whatCanBeImproved, finalThoughts } = data;
+    Reviews.collection.insert({ rating, howHelpfulWasCece, wouldYouRecommendCece, whatCanBeImproved, finalThoughts },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
@@ -44,7 +48,7 @@ class Feedback extends React.Component {
   render() {
     let fRef = null;
     return (
-        <div className="spacing">
+        <div className="spacing" id="feedback-page">
           <Grid container centered>
             <Grid.Column>
               <Header as="h2" textAlign="center" inverted>Feedback</Header>
@@ -53,11 +57,12 @@ class Feedback extends React.Component {
                 fRef = ref;
               }} schema={bridge} onSubmit={data => this.submit(data, fRef)}>
                 <Segment>
-                  <SelectField name='rating'/>
-                  <RadioField name='howHelpfulWasCece'/>
-                  <LongTextField name='whatCanBeImproved'/>
-                  <LongTextField name='finalThoughts'/>
-                  <SubmitField value='Submit'/>
+                  <SelectField name='rating' id='ratingField'/>
+                  <RadioField name='howHelpfulWasCece' id='helpfulField'/>
+                  <RadioField name='wouldYouRecommendCece' id='recommendField'/>
+                  <LongTextField name='whatCanBeImproved' id='improveField'/>
+                  <LongTextField name='finalThoughts' id='thoughtField'/>
+                  <SubmitField value='Submit' id='submitSurvey'/>
                   <ErrorsField/>
                 </Segment>
               </AutoForm>
