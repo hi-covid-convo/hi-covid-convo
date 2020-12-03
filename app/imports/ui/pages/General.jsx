@@ -37,14 +37,14 @@ export default class General extends React.Component {
               coughs, sneezes, or talks. You may also contract the virus by touch. Touching a surface or object that has
               virus on it and then touching your eyes, nose, or mouth can also spread the virus.
             </p>
-            <Header as='h3' inverted>What if?</Header>
-            <p>
-              If you are experiencing any of the symptoms mentioned above, there is a possibility you have COVID-19.
-              Most people experience mild symptoms and are able to recover at home. If you think you are exposed to the
-              virus, contact your healthcare provider and keep track of your symptoms. If it is an emergency warning
-              sign, get emergency medicare immediately if you are experiencing:
-            </p>
             <ul>
+              <Header as='h3' inverted><i>What if?</i></Header>
+              <p>
+                If you are experiencing any of the symptoms mentioned above, there is a possibility you have COVID-19.
+                Most people experience mild symptoms and are able to recover at home. If you think you are exposed to the
+                virus, contact your healthcare provider and keep track of your symptoms. If it is an emergency warning
+                sign, get emergency medicare immediately if you are experiencing:
+              </p>
               <li>Breathing problems</li>
               <li>Constant pain/pressure on the chest</li>
               <li>New confusion</li>
