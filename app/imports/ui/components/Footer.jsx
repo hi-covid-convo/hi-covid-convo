@@ -16,7 +16,7 @@ class Footer extends React.Component {
         <footer as="footer4">
           <div style={divStyle} className="ui center aligned container">
             <br/>
-            <Grid container stackable columns={4}>
+            <Grid container stackable columns={5}>
               <Grid.Column>
                 <List as='ul'>
                   <List.Item>
@@ -49,6 +49,15 @@ class Footer extends React.Component {
                   <List.Item>
                     <List.Content>
                       <Link to='/Resources' style={gold}>Resources</Link>
+                    </List.Content>
+                  </List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>
+                <List as='ul'>
+                  <List.Item>
+                    <List.Content>
+                      <Link to='/feedback' style={gold}>Survey</Link>
                     </List.Content>
                   </List.Item>
                 </List>
