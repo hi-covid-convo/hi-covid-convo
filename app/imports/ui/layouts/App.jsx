@@ -17,6 +17,7 @@ import Signout from '../pages/Signout';
 import About from '../pages/About';
 import General from '../pages/General';
 import Cece from '../pages/Cece';
+import Resources from '../pages/Resources';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -33,6 +34,7 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/feedback" component={Feedback}/>
+              <Route path="/resources" component={Resources}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <ProtectedRoute path="/analytics" component={Analytics}/>
               <ProtectedRoute path="/signout" component={Signout}/>
