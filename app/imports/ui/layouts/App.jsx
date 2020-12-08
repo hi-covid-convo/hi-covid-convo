@@ -8,6 +8,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import Analytics from '../pages/Analytics';
+import Admin from '../pages/Admin';
 import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
@@ -37,6 +38,7 @@ class App extends React.Component {
               <Route path="/resources" component={Resources}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <ProtectedRoute path="/analytics" component={Analytics}/>
+              <ProtectedRoute path="/admin" component={Admin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>

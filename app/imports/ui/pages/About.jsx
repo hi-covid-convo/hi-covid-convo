@@ -47,7 +47,7 @@ export default class About extends React.Component {
                       <Card.Header>Sydney Dempsey</Card.Header>
                     </Card.Content>
                     <Card.Content extra>
-                      <a>
+                      <a href='https://github.com/sydempsey' target='_blank' rel='noreferrer'>
                         <Icon name='github'/>
                       </a>
                     </Card.Content>
@@ -60,7 +60,7 @@ export default class About extends React.Component {
                       <Card.Header>Daniel Nilo</Card.Header>
                     </Card.Content>
                     <Card.Content extra>
-                      <a>
+                      <a href='https://github.com/duhkneelow' target='_blank' rel='noreferrer'>
                         <Icon name='github'/>
                       </a>
                     </Card.Content>
@@ -73,7 +73,7 @@ export default class About extends React.Component {
                       <Card.Header>Brian Raymund Abad</Card.Header>
                     </Card.Content>
                     <Card.Content extra>
-                      <a>
+                      <a href='https://github.com/BA-bbage' target='_blank' rel='noreferrer'>
                         <Icon name='github'/>
                       </a>
                     </Card.Content>

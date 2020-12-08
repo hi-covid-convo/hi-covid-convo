@@ -15,7 +15,35 @@ class Footer extends React.Component {
     return (
         <footer as="footer4">
           <div style={divStyle} className="ui center aligned container">
-            <Grid container stackable columns={3}>
+            <br/>
+            <Grid container stackable columns={4}>
+              <Grid.Column>
+                <List as='ul'>
+                  <List.Item>
+                    <List.Content>
+                      <Link to='/' style={gold}>Home</Link>
+                    </List.Content>
+                  </List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>
+                <List as='ul'>
+                  <List.Item>
+                    <List.Content>
+                      <Link to='/About' style={gold}>About</Link>
+                    </List.Content>
+                  </List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>
+                <List as='ul'>
+                  <List.Item>
+                    <List.Content>
+                      <Link to='/general' style={gold}>General</Link>
+                    </List.Content>
+                  </List.Item>
+                </List>
+              </Grid.Column>
               <Grid.Column>
                 <List as='ul'>
                   <List.Item>
@@ -26,6 +54,7 @@ class Footer extends React.Component {
                 </List>
               </Grid.Column>
             </Grid>
+            <br/>
             <p>Hawaii Covid Convo team</p>
             <p>Glen Larita, Sydney Dempsey, Daniel Nilo, Brian Abad</p>
           </div>

@@ -38,6 +38,11 @@ class NavBar extends React.Component {
                 <Icon name='line graph'/>
               </Menu.Item>
           ) : ''}
+          {this.props.currentUser === 'admin@foo.com' ? (
+              <Menu.Item id = "navbar-admin"as={NavLink} activeClassName="active" exact to="/admin" key='admin'>
+                Admin
+              </Menu.Item>
+          ) : ''}
             <Menu.Item position='right'>
               {this.props.currentUser === '' ? (
                   <Dropdown id="login-dropdown" text='Login' pointing="top right" icon={'user'}>
