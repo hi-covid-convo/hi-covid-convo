@@ -10,8 +10,7 @@ export default class General extends React.Component {
           <Container text style={white}>
             <Header as='h1' textAlign='center' inverted>COVID-19 General Knowledge</Header>
             <p>
-              Here is some general knowledge regarding the COVID-19 pandemic, including prevention, how its spread, and
-              symptoms.
+              Here is some general knowledge regarding the COVID-19 pandemic, including COVID-19 symptoms as well as ways to spread and prevent COVID-19.
             </p>
             <Header as='h2' inverted>Symptoms</Header>
             <p>
@@ -19,7 +18,7 @@ export default class General extends React.Component {
               contagious. People who have
               COVID-19 may experience symptoms such as fever and chills, cough, SOB (shortness of breath),
               fatigue, muscle soreness and many more flu-like symptoms. People who have
-              the virus may have severe to mild symptoms. There are also cases of people who have contracted the virus,
+              the virus may have mild to severe symptoms. There are also cases of people who have contracted the virus,
               but are asymptomatic (do not have any reported symptoms). Other symptoms include:
             </p>
             <ul>
@@ -66,9 +65,9 @@ export default class General extends React.Component {
               you do not have any access with soap and water, use hand sanitizer that contains at least 60% alcohol.
             </p>
             <p>
-              If you are taking care of someone you know who has contracted the virus, do your best to support them:
+              If you are taking care of someone you know who has contracted the virus, do your best to support them by:
             </p>
-            <Header as='h3' inverted><i>Help cover necessities</i></Header>
+            <Header as='h3' inverted><i>Helping cover necessities</i></Header>
             <ul>
               <li>Help the sick person by following the doctor&apos;s instructions for care and medicine if necessary
               </li>
@@ -78,14 +77,14 @@ export default class General extends React.Component {
               <li>Help out with groceries, prescriptions, and other forms of aid</li>
               <li>Take care of their pet(s) and limit contact between the sick person and their pet(s) if necessary</li>
             </ul>
-            <Header as='h3' inverted><i>Be aware of warning signs</i></Header>
+            <Header as='h3' inverted><i>Being aware of warning signs</i></Header>
             <ul>
               <li>Have their doctor&apos;s phone number on hand</li>
               <li>Call their doctor if condition worsens</li>
               <li>Seek medical care if necessary</li>
             </ul>
             <Header as='h2' inverted>Combatting Stress during COVID</Header>
-            <p>Although we are in a tough time during this pandemic, there are definitely ways to relieve your stress and they include:</p>
+            <p>Although we are in a tough time during this pandemic, there are ways to relieve your stress.  Some of them include:</p>
             <ul>
               <li>Yoga</li>
               <li>Reading</li>
@@ -96,7 +95,7 @@ export default class General extends React.Component {
             </ul>
             <p>If a hobby involves going outside, do it in moderation and stay safe!</p>
             <Header as='h5' textAlign='center' inverted>
-              This information was gathered by the collected by the Centers for Disease Control and Prevention (CDC).
+              This information was gathered and collected by the Centers for Disease Control and Prevention (CDC).
             </Header>
           </Container>
         </div>
