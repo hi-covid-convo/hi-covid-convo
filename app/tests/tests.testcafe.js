@@ -17,12 +17,14 @@ fixture('meteor-application-template-react localhost test with default db')
     .page('http://localhost:3000');
 
 test('Test that landing page shows up', async (testController) => {
+  await testController.wait(15000);
   await landingPage.isDisplayed(testController);
 });
 
 test('Test that signin and signout work', async (testController) => {
   await navBar.gotoSigninPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
+  await testController.wait(500);
   await navBar.isLoggedIn(testController, credentials.username);
   await navBar.logout(testController);
   await signoutPage.isDisplayed(testController);
@@ -69,8 +71,10 @@ test('Test that Cece chatbot page shows up (Anonymous and login)', async (testCo
   await testController.wait(500);
 });
 
-test('Test that Feedback page works', async (testController) => {
+ test('Test that Feedback page works', async (testController) => {
   await landingPage.gotoCece(testController);
+  await testController.wait(500);
   await cecePage.gotoFeedback(testController);
+  await testController.wait(500);
   await feedbackPage.fillSurvey(testController);
-});
+ });

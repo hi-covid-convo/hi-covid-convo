@@ -13,7 +13,7 @@ class CecePage {
 
   async gotoFeedback(testController) {
     await this.isDisplayed(testController);
-    await testController.click('#feedback');
+    await testController.click(Selector('#Feedback'));
   }
 }
 
