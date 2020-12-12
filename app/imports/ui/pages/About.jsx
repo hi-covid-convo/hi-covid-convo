@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Card, Icon, Image, Grid } from 'semantic-ui-react';
+import { Container, Header, Card, Icon, Image, Grid, List } from 'semantic-ui-react';
 
 export default class About extends React.Component {
   render() {
@@ -32,6 +32,22 @@ export default class About extends React.Component {
                   <Image src='https://glarita.github.io/images/GlenLarita.jpg' wrapped ui={false}/>
                   <Card.Content>
                     <Card.Header>Glen Larita</Card.Header>
+                    <Card.Description>
+                      Glen is a computer science major currently attending the University of Hawaii at Manoa. His
+                      hobbies include skateboarding, playing video games, and spending time with family.
+                    </Card.Description>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <Card.Meta>Interests
+                      <List as='ol'>
+                        <List.Item as='li' value='-'>
+                          Software engineering
+                        </List.Item>
+                        <List.Item as='li' value='-'>
+                          Web application development
+                        </List.Item>
+                      </List>
+                    </Card.Meta>
                   </Card.Content>
                   <Card.Content extra>
                     <a href='http://github.com/glarita' target='_blank' rel='noreferrer'>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Grid, Segment, Header } from 'semantic-ui-react';
-import { AutoForm, ErrorsField, RadioField, SelectField, SubmitField, LongTextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, SelectField, SubmitField, LongTextField } from 'uniforms-semantic';
 import swal from 'sweetalert';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
+import RadioField from '../forms/controllers/RadioField';
 import { Reviews } from '../../api/review/Reviews';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
@@ -52,14 +53,16 @@ class Feedback extends React.Component {
           <Grid container centered>
             <Grid.Column>
               <Header as="h2" textAlign="center" inverted>Feedback</Header>
-              <Header as="h4" textAlign="center" inverted>Please complete the form below.</Header>
+              <Header as="h4" textAlign="center" inverted>If you have had any issues with our Cece chat-bot or website
+                please let us know in the form below. This will help us make improvements for the future.</Header>
+
               <AutoForm ref={ref => {
                 fRef = ref;
               }} schema={bridge} onSubmit={data => this.submit(data, fRef)}>
                 <Segment>
                   <SelectField name='rating' id='ratingField'/>
-                  <RadioField name='howHelpfulWasCece' id='helpfulField'/>
-                  <RadioField name='wouldYouRecommendCece' id='recommendField'/>
+                  <RadioField name='howHelpfulWasCece' id='helpfulField' inline showInlineError={true}/>
+                  <RadioField name='wouldYouRecommendCece' id='recommendField' inline showInlineError={true}/>
                   <LongTextField name='whatCanBeImproved' id='improveField'/>
                   <LongTextField name='finalThoughts' id='thoughtField'/>
                   <SubmitField value='Submit' id='submitSurvey'/>
