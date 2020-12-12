@@ -20,7 +20,8 @@ export default class Resources extends React.Component {
                   <List.Header text style={white}>Safety</List.Header>
                   <List.Description>
                     <Icon inverted name='right triangle'/>
-                    <a style={gold} href='https://hawaiicovid19.com/everyday-prevention/' target='_blank' rel='noreferrer'>hawaiicovid19.com -
+                    <a style={gold} href='https://hawaiicovid19.com/everyday-prevention/' target='_blank'
+                       rel='noreferrer'>hawaiicovid19.com -
                       prevention</a>
                   </List.Description>
                 </List.Content>
@@ -32,7 +33,8 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href=' https://hawaiicovid19.com/wp-content/uploads/2020/08/What-to-Do-if-a-Person-at-Your-Worksite-has-COVID-19.pdf' target='_blank' rel='noreferrer'> hawaiicovid19.com
+                       href=' https://hawaiicovid19.com/wp-content/uploads/2020/08/What-to-Do-if-a-Person-at-Your-Worksite-has-COVID-19.pdf'
+                       target='_blank' rel='noreferrer'> hawaiicovid19.com
                       - workplace</a>
                   </List.Description>
                 </List.Content>
@@ -44,11 +46,20 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://health.hawaii.gov/coronavirusdisease2019/ and https://hawaiicovid19.com/news/'
+                       href='https://hawaiicovid19.com/news/'
                        target='_blank'
                        rel='noreferrer'
                     >
                       COVID-19 news in Hawaii</a>
+                  </List.Description>
+                  <List.Description>
+                    <Icon inverted name='right triangle'/>
+                    <a style={gold}
+                       href='https://health.hawaii.gov/coronavirusdisease2019/'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
+                      COVID-19 news in Hawaii #2</a>
                   </List.Description>
                 </List.Content>
               </List.Item>
@@ -107,8 +118,7 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.cdc.gov/coronavirus/2019-ncov/community/large-events/
-                       considerations-for-events-gatherings.html'
+                       href='https://www.cdc.gov/coronavirus/2019-ncov/community/large-events/considerations-for-events-gatherings.html'
                        target='_blank' rel='noreferrer'>Number
                       of People</a>
                   </List.Description>
@@ -181,7 +191,8 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-frequently-asked-questions' target='_blank' rel='noreferrer'>
+                       href='https://www.fda.gov/emergency-preparedness-and-response/coronavirus-disease-2019-covid-19/covid-19-frequently-asked-questions'
+                       target='_blank' rel='noreferrer'>
                       Smoking
                     </a>
                   </List.Description>
@@ -242,8 +253,7 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.webmd.com/lung/
-                       coronavirus-history#:~:text=Experts%20say%20SARS%2DCoV,“wet%20markets'
+                       href='https://www.webmd.com/lung/coronavirus-history#:~:text=Experts%20say%20SARS%2DCoV,“wet%20markets'
                        target='_blank'
                        rel='noreferrer'
                     >
@@ -272,13 +282,6 @@ export default class Resources extends React.Component {
                     <a style={gold}
                        href=' https://www.oneoahu.org/masks' target='_blank' rel='noreferrer'>
                       Rules and Regulations</a>
-                  </List.Description>
-
-                  <List.Description>
-                    <Icon inverted name='right triangle'/>
-                    <a style={gold}
-                       href='https://hawaiicovid19.com/mask-guidance/' target='_blank' rel='noreferrer'>
-                      Guidance</a>
                   </List.Description>
 
                   <List.Description>
@@ -363,11 +366,21 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://covidfreehawaii.com/testing-locations/ and https://doineedacovid19test.com/'
+                       href='https://covidfreehawaii.com/testing-locations/'
                        target='_blank'
                        rel='noreferrer'
                     >
                       Testing in Hawaii</a>
+                  </List.Description>
+
+                  <List.Description>
+                    <Icon inverted name='right triangle'/>
+                    <a style={gold}
+                       href='https://doineedacovid19test.com/'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
+                      Testing in Hawaii #2</a>
                   </List.Description>
 
                   <List.Description>
@@ -422,11 +435,21 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://hawaiicovid19.com/travel/ or https://health.hawaii.gov/coronavirusdisease2019/travel/travel-advisories/'
+                       href='https://hawaiicovid19.com/travel/'
                        target='_blank'
                        rel='noreferrer'
                     >
                       Travelling to Hawaii</a>
+                  </List.Description>
+
+                  <List.Description>
+                    <Icon inverted name='right triangle'/>
+                    <a style={gold}
+                       href='https://health.hawaii.gov/coronavirusdisease2019/travel/travel-advisories/'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
+                      Travelling to Hawaii #2</a>
                   </List.Description>
 
                   <List.Description>
