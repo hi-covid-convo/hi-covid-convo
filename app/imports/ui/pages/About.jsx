@@ -28,33 +28,34 @@ export default class About extends React.Component {
           <Container as='h4'>
             <Grid columns={4} divided stackable>
               <Grid.Row>
-                <Grid.Column><Card>
-                  <Image src='https://glarita.github.io/images/GlenLarita.jpg' wrapped ui={false}/>
-                  <Card.Content>
-                    <Card.Header>Glen Larita</Card.Header>
-                    <Card.Description>
-                      Glen is a computer science major currently attending the University of Hawaii at Manoa. His
-                      hobbies include skateboarding, playing video games, and spending time with family.
-                    </Card.Description>
-                  </Card.Content>
-                  <Card.Content extra>
-                    <Card.Meta>Interests
-                      <List as='ol'>
-                        <List.Item as='li' value='-'>
-                          Software engineering
-                        </List.Item>
-                        <List.Item as='li' value='-'>
-                          Web application development
-                        </List.Item>
-                      </List>
-                    </Card.Meta>
-                  </Card.Content>
-                  <Card.Content extra>
-                    <a href='http://github.com/glarita' target='_blank' rel='noreferrer'>
-                      <Icon name='github'/>
-                    </a>
-                  </Card.Content>
-                </Card>
+                <Grid.Column>
+                  <Card>
+                    <Image src='https://glarita.github.io/images/GlenLarita.jpg' wrapped ui={false}/>
+                    <Card.Content>
+                      <Card.Header>Glen Larita</Card.Header>
+                      <Card.Description>
+                        Glen is a computer science major currently attending the University of Hawaii at Manoa. His
+                        hobbies include skateboarding, playing video games, and spending time with family.
+                      </Card.Description>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <Card.Meta>Interests
+                        <List as='ol'>
+                          <List.Item as='li' value='-'>
+                            Software engineering
+                          </List.Item>
+                          <List.Item as='li' value='-'>
+                            Web application development
+                          </List.Item>
+                        </List>
+                      </Card.Meta>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <a href='http://github.com/glarita' target='_blank' rel='noreferrer'>
+                        <Icon name='github'/>
+                      </a>
+                    </Card.Content>
+                  </Card>
                 </Grid.Column>
                 <Grid.Column>
                   <Card>
@@ -74,6 +75,28 @@ export default class About extends React.Component {
                     <Image src='https://duhkneelow.github.io/images/me.JPG' wrapped ui={false}/>
                     <Card.Content>
                       <Card.Header>Daniel Nilo</Card.Header>
+                      <Card.Description>
+                        Daniel is currently studying computer science at the University of Hawaii at Manoa. His
+                        interests
+                        include potatoes since he considers them life and goats because he believes he is the greatest
+                        of
+                        all time!
+                      </Card.Description>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <Card.Meta>Interests
+                        <List as='ol'>
+                          <List.Item as='li' value='-'>
+                            Software engineering
+                          </List.Item>
+                          <List.Item as='li' value='-'>
+                            Web Development
+                          </List.Item>
+                          <List.Item as='li' value='-'>
+                            Typography/Graphic Design
+                          </List.Item>
+                        </List>
+                      </Card.Meta>
                     </Card.Content>
                     <Card.Content extra>
                       <a href='https://github.com/duhkneelow' target='_blank' rel='noreferrer'>
@@ -93,7 +116,8 @@ export default class About extends React.Component {
                         <Icon name='github'/>
                       </a>
                     </Card.Content>
-                  </Card></Grid.Column>
+                  </Card>
+                </Grid.Column>
               </Grid.Row>
             </Grid>
           </Container>
