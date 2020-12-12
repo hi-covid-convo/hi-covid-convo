@@ -231,7 +231,10 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf'>
+                       href='https://www.cdc.gov/coronavirus/2019-ncov/downloads/2019-ncov-factsheet.pdf'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       What is COVID-19?
                     </a>
                   </List.Description>
@@ -239,7 +242,11 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.webmd.com/lung/coronavirus-history#:~:text=Experts%20say%20SARS%2DCoV,“wet%20markets'>
+                       href='https://www.webmd.com/lung/
+                       coronavirus-history#:~:text=Experts%20say%20SARS%2DCoV,“wet%20markets'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Where did it come from?
                     </a>
                   </List.Description>
@@ -247,7 +254,10 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html'>
+                       href='https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/end-home-isolation.html'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       How long does it last?
                     </a>
                   </List.Description>
@@ -260,21 +270,21 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href=' https://www.oneoahu.org/masks'>
+                       href=' https://www.oneoahu.org/masks' target='_blank' rel='noreferrer'>
                       Rules and Regulations</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://hawaiicovid19.com/mask-guidance/'>
+                       href='https://hawaiicovid19.com/mask-guidance/' target='_blank' rel='noreferrer'>
                       Guidance</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://hawaiicovid19.com/mask-guidance/'>
+                       href='https://hawaiicovid19.com/mask-guidance/' target='_blank' rel='noreferrer'>
                       Guidance</a>
                   </List.Description>
                 </List.Content>
@@ -286,14 +296,17 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html'>
+                       href='https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Common and Severe Symptoms</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://hawaiicovid19.com/symptoms/'>
+                       href='https://hawaiicovid19.com/symptoms/' target='_blank' rel='noreferrer'>
                       More Symptoms</a>
                   </List.Description>
                 </List.Content>
@@ -305,14 +318,20 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://hawaiicovid19.com/wp-content/uploads/2020/03/Fact-Sheet-Kupuna_032420.pdf'>
+                       href='https://hawaiicovid19.com/wp-content/uploads/2020/03/Fact-Sheet-Kupuna_032420.pdf'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Elderly</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html'>
+                       href='https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       How is it spread?</a>
                   </List.Description>
                 </List.Content>
@@ -324,49 +343,64 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://health.hawaii.gov/coronavirusdisease2019/what-you-can-do/if-you-become-sick/'>
+                       href='https://health.hawaii.gov/coronavirusdisease2019/what-you-can-do/if-you-become-sick/'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Testing positive</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.cdc.gov/coronavirus/2019-ncov/travelers/testing-air-travel.html'>
+                       href='https://www.cdc.gov/coronavirus/2019-ncov/travelers/testing-air-travel.html'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Before travel</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://covidfreehawaii.com/testing-locations/ and https://doineedacovid19test.com/'>
+                       href='https://covidfreehawaii.com/testing-locations/ and https://doineedacovid19test.com/'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Testing in Hawaii</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href=' https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html'>
+                       href=' https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/testing.html'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Types of tests</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.webmd.com/lung/coronavirus-testing#3-7'>
+                       href='https://www.webmd.com/lung/coronavirus-testing#3-7' target='_blank' rel='noreferrer'>
                       Results</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://hawaiicovid19.com/testing-isolation-quarantine/'>
+                       href='https://hawaiicovid19.com/testing-isolation-quarantine/' target='_blank' rel='noreferrer'>
                       What to expect</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://faq.coronavirus.gov/symptoms-and-testing/#should-i-be-tested-for-covid-19'>
+                       href='https://faq.coronavirus.gov/symptoms-and-testing/#should-i-be-tested-for-covid-19'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       When should I get tested?</a>
                   </List.Description>
                 </List.Content>
@@ -378,21 +412,30 @@ export default class Resources extends React.Component {
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href=' https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html'>
+                       href=' https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Best time to travel during COVID-19</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://hawaiicovid19.com/travel/ or https://health.hawaii.gov/coronavirusdisease2019/travel/travel-advisories/'>
+                       href='https://hawaiicovid19.com/travel/ or https://health.hawaii.gov/coronavirusdisease2019/travel/travel-advisories/'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Travelling to Hawaii</a>
                   </List.Description>
 
                   <List.Description>
                     <Icon inverted name='right triangle'/>
                     <a style={gold}
-                       href='https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html'>
+                       href='https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html'
+                       target='_blank'
+                       rel='noreferrer'
+                    >
                       Travelling safely</a>
                   </List.Description>
                 </List.Content>
