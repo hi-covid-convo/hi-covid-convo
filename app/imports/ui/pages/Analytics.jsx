@@ -6,7 +6,7 @@ import { Container, Header, Loader, Table, Grid, Label } from 'semantic-ui-react
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Reviews } from '../../api/review/Reviews';
-import ReviewItemAdmin from '../components/ReviewItemAdmin';
+import ReviewItemAdmin from '../components/ReviewItemAdmin1';
 
 /** Renders the statistics of the application and the reviews on the chat-bot */
 class Analytics extends React.Component {
@@ -18,10 +18,6 @@ class Analytics extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    // const ratingExcell = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; }));
-    // const ratingGood = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; }));
-    // const ratingFair = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; }));
-    // const ratingPoor = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; }));
     const marginTop = {
       marginTop: '-40px',
     };
@@ -38,6 +34,7 @@ class Analytics extends React.Component {
                   <Table.HeaderCell>Would you recommend Cece?</Table.HeaderCell>
                   <Table.HeaderCell>What Can Be Improved?</Table.HeaderCell>
                   <Table.HeaderCell>Final Thoughts?</Table.HeaderCell>
+                  <Table.HeaderCell>Remove</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
               <Table.Body>
