@@ -62,6 +62,25 @@ export default class About extends React.Component {
                     <Image src='https://sydempsey.github.io/images/sydz_good.jpg' wrapped ui={false}/>
                     <Card.Content>
                       <Card.Header>Sydney Dempsey</Card.Header>
+                      <Card.Description>
+                        Sydney is studying computer engineering at the University of Hawaii at Manoa. Her
+                        hobbies include reading, graphic design, and attempting to keep house plants alive :-)
+                      </Card.Description>
+                    </Card.Content>
+                    <Card.Content extra>
+                      <Card.Meta>Interests
+                        <List as='ol'>
+                          <List.Item as='li' value='-'>
+                            Creative Media
+                          </List.Item>
+                          <List.Item as='li' value='-'>
+                            Machine Learning
+                          </List.Item>
+                          <List.Item as='li' value='-'>
+                            Software Engineering
+                          </List.Item>
+                        </List>
+                      </Card.Meta>
                     </Card.Content>
                     <Card.Content extra>
                       <a href='https://github.com/sydempsey' target='_blank' rel='noreferrer'>
