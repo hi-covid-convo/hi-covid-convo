@@ -2,9 +2,10 @@ import React from 'react';
 import { PieChart } from 'react-minimal-pie-chart';
 import _ from 'lodash';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Table, Grid, Label } from 'semantic-ui-react';
+import { Container, Header, Loader, Table, Grid, Label, Button } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { Reviews } from '../../api/review/Reviews';
 import ReviewItemAdmin from '../components/ReviewItemAdmin';
 
@@ -18,10 +19,6 @@ class Analytics extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    // const ratingExcell = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'excellent'; }));
-    // const ratingGood = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'good'; }));
-    // const ratingFair = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'fair'; }));
-    // const ratingPoor = _.size(_.filter(this.props.reviews, function (feedback) { return feedback.rating === 'poor'; }));
     const marginTop = {
       marginTop: '-40px',
     };
@@ -38,12 +35,18 @@ class Analytics extends React.Component {
                   <Table.HeaderCell>Would you recommend Cece?</Table.HeaderCell>
                   <Table.HeaderCell>What Can Be Improved?</Table.HeaderCell>
                   <Table.HeaderCell>Final Thoughts?</Table.HeaderCell>
+                  <Table.HeaderCell>Delete</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
               <Table.Body>
                 {this.props.reviews.map((review) => <ReviewItemAdmin key={review._id} review={review}/>)}
               </Table.Body>
             </Table>
+            <Container>
+            <Button className="ui primary button" id="edit" as={Link} to='/editAnalytics/:_id'>
+              Edit Analytics
+            </Button>
+            </Container>
           </Container>
           <Container as = "h4">
             <Grid columns={3} divided stackable>
@@ -167,11 +170,13 @@ Analytics.propTypes = {
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-export default withTracker(() => {
+export default withTracker(({ match }) => {
+  // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
+  const documentId = match.params._id;
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe(Reviews.userPublicationName);
   return {
-    reviews: Reviews.collection.find({}).fetch(),
+    doc: Reviews.collection.findOne(documentId),
     ready: subscription.ready(),
   };
 })(Analytics);

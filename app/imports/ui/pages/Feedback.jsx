@@ -1,8 +1,11 @@
 import React from 'react';
 import { Grid, Segment, Header } from 'semantic-ui-react';
 import { AutoForm, ErrorsField, SelectField, SubmitField, LongTextField } from 'uniforms-semantic';
+import { Meteor } from 'meteor/meteor';
+import { withTracker } from 'meteor/react-meteor-data';
 import swal from 'sweetalert';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
+import PropTypes from 'prop-types';
 import SimpleSchema from 'simpl-schema';
 import RadioField from '../forms/controllers/RadioField';
 import { Reviews } from '../../api/review/Reviews';
@@ -33,8 +36,8 @@ class Feedback extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { rating, howHelpfulWasCece, wouldYouRecommendCece, whatCanBeImproved, finalThoughts } = data;
-    Reviews.collection.insert({ rating, howHelpfulWasCece, wouldYouRecommendCece, whatCanBeImproved, finalThoughts },
+    const { rating, howHelpfulWasCece, wouldYouRecommendCece, whatCanBeImproved, finalThoughts, _id } = data;
+    Reviews.collection.insert({ _id, rating, howHelpfulWasCece, wouldYouRecommendCece, whatCanBeImproved, finalThoughts },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
@@ -58,7 +61,7 @@ class Feedback extends React.Component {
 
               <AutoForm ref={ref => {
                 fRef = ref;
-              }} schema={bridge} onSubmit={data => this.submit(data, fRef)}>
+              }} schema={bridge} onSubmit={data => this.submit(data, fRef)} model={this.props.doc}>
                 <Segment>
                   <SelectField name='rating' id='ratingField'/>
                   <RadioField name='howHelpfulWasCece' id='helpfulField' inline showInlineError={true}/>
@@ -76,4 +79,19 @@ class Feedback extends React.Component {
   }
 }
 
-export default Feedback;
+Feedback.propTypes = {
+  doc: PropTypes.object,
+  model: PropTypes.object,
+  ready: PropTypes.bool.isRequired,
+};
+
+export default withTracker(({ match }) => {
+  // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
+  const documentId = match.params._id;
+  // Get access to Stuff documents.
+  const subscription = Meteor.subscribe(Reviews.userPublicationName);
+  return {
+    doc: Reviews.collection.findOne(documentId),
+    ready: subscription.ready(),
+  };
+})(Feedback);

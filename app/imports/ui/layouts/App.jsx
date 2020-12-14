@@ -18,6 +18,7 @@ import About from '../pages/About';
 import General from '../pages/General';
 import Cece from '../pages/Cece';
 import Resources from '../pages/Resources';
+import editAnalytics from '../pages/editAnalytics';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -38,6 +39,7 @@ class App extends React.Component {
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <ProtectedRoute path="/analytics" component={Analytics}/>
               <ProtectedRoute path="/signout" component={Signout}/>
+              <ProtectedRoute path="/editAnalytics/:_id" component={editAnalytics}/>
               <Route component={NotFound}/>
             </Switch>
             <Footer/>
