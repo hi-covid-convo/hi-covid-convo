@@ -14,9 +14,9 @@
   ],
 
   "defaultFeedback": [
-    { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
-    { "rating": "excellent", "howHelpfulWasCece": "Not very helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" },
-    { "rating": "fair", "howHelpfulWasCece": "Very helpful", "wouldYouRecommendCece": "Yes", "whatCanBeImproved": "most of it :(", "finalThoughts": "please fix everything" },
-    { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "wouldYouRecommendCece": "No","whatCanBeImproved": "everything lol", "finalThoughts": "please fix everything" }
+    { "rating": "good", "howHelpfulWasCece": "Somewhat helpful", "wouldYouRecommendCece": "No", "whatCanBeImproved": "Make the links from the chatbot click-able", "finalThoughts": "overall pretty helpful :)" },
+    { "rating": "excellent", "howHelpfulWasCece": "Very helpful", "wouldYouRecommendCece": "Yes", "whatCanBeImproved": "Maybe have the chatbot include restrictions on inter-island travel", "finalThoughts": "I was able to get my questions answered :-)" },
+    { "rating": "fair", "howHelpfulWasCece": "Not very helpful", "wouldYouRecommendCece": "Yes", "whatCanBeImproved": "I think it's pretty good", "finalThoughts": "Useful site" },
+    { "rating": "poor", "howHelpfulWasCece": "Not helpful at all", "wouldYouRecommendCece": "No","whatCanBeImproved": "more pictures in the about page", "finalThoughts": "pretty cool application" }
   ]
 }
