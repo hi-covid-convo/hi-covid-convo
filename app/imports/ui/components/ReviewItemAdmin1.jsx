@@ -6,7 +6,6 @@ import { Reviews } from '../../api/review/Reviews';
 /** Renders a single row in the Analytics table. See pages/Analytics.jsx. */
 class ReviewItemAdmin extends React.Component {
   removeItem(docID) {
-    console.log(`item to delete is: ${docID}`);
     Reviews.collection.remove(docID);
   }
 
