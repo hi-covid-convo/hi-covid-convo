@@ -129,25 +129,25 @@ export default class About extends React.Component {
                     <Image src='https://ba-bbage.github.io/images/Profile_Pic_Face.jpg' wrapped ui={false}/>
                     <Card.Content>
                       <Card.Header>Brian Raymund Abad</Card.Header>
+                      <Card.Description>
+                        Brian is studying computer engineering at the University of Hawaii at Manoa. He loves to game in his spare time!
+                      </Card.Description>
                     </Card.Content>
-                    <Card.Description>
-                      Brian is studying computer engineering at the University of Hawaii at Manoa. He loves to game in his spare time.
-                    </Card.Description>
-                  <Card.Content extra>
-                    <Card.Meta>Interests
-                      <List as='ol'>
-                        <List.Item as='li' value='-'>
-                          Software engineering
-                        </List.Item>
-                        <List.Item as='li' value='-'>
-                          Game Development
-                        </List.Item>
-                        <List.Item as='li' value='-'>
-                          Mathematics
-                        </List.Item>
-                      </List>
-                    </Card.Meta>
-                  </Card.Content>
+                    <Card.Content extra>
+                      <Card.Meta>Interests
+                        <List as='ol'>
+                          <List.Item as='li' value='-'>
+                            Software engineering
+                          </List.Item>
+                          <List.Item as='li' value='-'>
+                            Game Development
+                          </List.Item>
+                          <List.Item as='li' value='-'>
+                            Mathematics
+                          </List.Item>
+                        </List>
+                      </Card.Meta>
+                    </Card.Content>
                     <Card.Content extra>
                       <a href='https://github.com/BA-bbage' target='_blank' rel='noreferrer'>
                         <Icon name='github'/>
