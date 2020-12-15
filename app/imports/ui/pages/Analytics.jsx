@@ -26,7 +26,7 @@ class Analytics extends React.Component {
           <Container>
             <Header as="h2" textAlign="center" inverted>Analytics</Header>
             <Header as="h3" textAlign="center" inverted>Below displays analytical data of the Cece Chatbot</Header>
-            <Table celled>
+            <Table celled selectable>
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell>How Satisfied Were You?</Table.HeaderCell>
