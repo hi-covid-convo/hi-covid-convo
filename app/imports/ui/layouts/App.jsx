@@ -8,7 +8,6 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import Analytics from '../pages/Analytics';
-import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -35,7 +34,6 @@ class App extends React.Component {
               <Route path="/signup" component={Signup}/>
               <Route path="/feedback" component={Feedback}/>
               <Route path="/resources" component={Resources}/>
-              <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <ProtectedRoute path="/analytics" component={Analytics}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
